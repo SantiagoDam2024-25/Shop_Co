@@ -1,0 +1,18 @@
+:root{
+    --f-color-primary: #8C3A87;
+    --f-color-secondary: #BF54B8;
+    --f-color-third: #F26DE9;
+    --f-color-light: #f2f2f2;
+    --f-color-dark: #0d0d0d;
+    --f-color-background : #F2F0F1;
+    --f-family-Satoshi: 'Satoshi', sans-serif;
+    --f-family-Integral: 'integral_cf', sans-serif;
+}
+
+*{
+    font-family: var(--f-family-Satoshi);
+}
+
+.body{
+    background-color: #00b3ff;
+}

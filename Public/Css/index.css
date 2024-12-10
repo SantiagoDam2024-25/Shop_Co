@@ -1,0 +1,6 @@
+@import "Normalize.css";
+@import "Public/Css/Font_Sayoshi/Satochi.css";
+@import "Public/Css/Font-Integral/Integral.css";
+@import "./rules.css";
+@import "Header/header.css";
+@import "Main/Home.css";
