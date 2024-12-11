@@ -1,0 +1,32 @@
+.header_offer {
+    height: 32px;
+    width: 100%;
+    background-color: #0d0d0d;
+    color: var(--f-color-light);
+
+    .header_offer_text {
+        width: var(--f-width-lg);
+        height: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h5 {
+            margin: 0;
+        }
+
+        .singup {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .close {
+            position: absolute;
+            top: 4px;
+            right: 5.25rem;
+            cursor: pointer;
+        }
+    }
+}

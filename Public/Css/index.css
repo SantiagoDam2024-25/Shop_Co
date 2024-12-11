@@ -3,4 +3,5 @@
 @import "Public/Css/Font-Integral/Integral.css";
 @import "./rules.css";
 @import "Header/header.css";
+@import "components/BannerSingUp.css";
 @import "Main/Home.css";
