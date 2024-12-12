@@ -1,7 +1,12 @@
 @import "Normalize.css";
-@import "Public/Css/Font_Sayoshi/Satochi.css";
-@import "Public/Css/Font-Integral/Integral.css";
 @import "./rules.css";
+@import "Public/Css/Font_Satoshi/Satochi.css";
+@import "Public/Css/Font_Integral/Integral.css";
 @import "Header/header.css";
 @import "components/BannerSingUp.css";
 @import "Main/Home.css";
+@import "Main/Banner.css";
+@import "Main/Brands.css";
+@import "Main/NewArrivals.css";
+@import "components/ButtonHome.css";
+
