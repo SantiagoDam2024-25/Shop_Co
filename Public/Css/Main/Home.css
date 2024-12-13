@@ -7,4 +7,17 @@ html{
     max-width: 100vw;
     display: flex;
     flex-direction: column;
+
+    .home-line{
+        width: 100%;
+        height: 2px;
+        display: flex;
+        justify-content: center;
+
+        .home-line-color{
+            width: calc(100vw - 10.5rem);
+            background-color: var(--f-color-price-old);
+        }
+    }
 }
+
