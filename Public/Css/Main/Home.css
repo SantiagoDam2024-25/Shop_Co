@@ -19,5 +19,18 @@ html{
             background-color: var(--f-color-price-old);
         }
     }
+
+    .star{
+        width: 25px;
+        height: 100%;
+        color: darkgoldenrod;
+    }
+
+    .verify{
+        width: 25px;
+        height: 100%;
+        color: darkgreen;
+        margin-left: .75rem;
+    }
 }
 
