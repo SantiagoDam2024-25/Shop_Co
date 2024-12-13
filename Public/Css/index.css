@@ -7,6 +7,8 @@
 @import "Main/Home.css";
 @import "Main/Banner.css";
 @import "Main/Brands.css";
-@import "Main/NewArrivals.css";
+@import "Main/Categories.css";
 @import "components/ButtonHome.css";
 
+@import "Main/ShowProduct-Section.css";
+@import "Main/Product.css";
