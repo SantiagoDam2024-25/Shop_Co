@@ -1,0 +1,56 @@
+.home_review{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.52rem 0 2rem;
+
+    .home_review_container{
+        width: calc(100vw - 10.5rem);
+
+    }
+
+    .home_review_txt{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.5rem;
+
+        .home_review_txt-title{
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .arrow{
+            padding: .25rem;
+            border: 1px solid var(--f-color-price-old);
+            border-radius: .25rem;
+            cursor: pointer;
+        }
+    }
+
+   .review-list{
+        width: 100%;
+        display: flex;
+        gap:1.25rem;
+       margin-bottom: 5rem;
+    }
+
+    .review{
+        width: 100%;
+        border: 1px solid #1A1A1A;
+        border-radius: 1.25rem;
+        padding: 1.75rem;
+
+        .review-name{
+            display: flex;
+            align-items: center;
+
+            .name{
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
