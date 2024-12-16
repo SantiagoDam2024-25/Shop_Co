@@ -2,7 +2,7 @@
 @import "./rules.css";
 @import "Public/Css/Font_Satoshi/Satochi.css";
 @import "Public/Css/Font_Integral/Integral.css";
-@import "Header/header.css";
+@import "Header/Header.css";
 @import "components/BannerSingUp.css";
 @import "Main/Home.css";
 @import "Main/Banner.css";

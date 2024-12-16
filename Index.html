@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de ropa</title>
     <link rel="stylesheet" href="./Public/Css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
@@ -11,32 +12,41 @@
 <header class="header">
     <aside class="header_offer">
         <article class="header_offer_text">
-            <h5>Registrate y obtén 20% de descuento en tu primera compra. <span class="singup">Regisrate acá</span></h5>
-
+            <h5>Registrate y obtén 20% de descuento en tu primera compra.</h5>
+            <span class="singup">Regisrate acá</span>
             <span class="material-symbols-rounded close">close</span>
         </article>
-
-
     </aside>
+
     <section class="header_primary">
+
+        <section class="header_burger">
+            <span class="line_burger"></span>
+            <ul class="header_burger_ul">
+                <li class="item">Tienda</li>
+                <li class="item">Ofertas</li>
+                <li class="item">Nuevos</li>
+                <li class="item">Marcas</li>
+            </ul>
+        </section>
         <section class="header_img">
             <img src="Public/Images/Logo.png" alt="Imagen con enlace al shop.co">
         </section>
         <section class="header_nav">
             <nav class="nav">
                 <ul class="nav_ul">
-                    <li class="nav_ul-li"><a href="#">Shop </a><span class="material-symbols-rounded icon-light">
-keyboard_arrow_down
-</span>
+                    <li class="nav_ul-li"><a href="#">Tienda </a><span class="material-symbols-rounded icon-light">
+keyboard_arrow_down</span>
                     </li>
-                    <li class="nav_ul-li">On sale</li>
-                    <li class="nav_ul-li">New Arrivals</li>
-                    <li class="nav_ul-li">Brands</li>
+                    <li class="nav_ul-li">Ofertas</li>
+                    <li class="nav_ul-li">Llegadas</li>
+                    <li class="nav_ul-li">Marcas</li>
                 </ul>
             </nav>
         </section>
         <section class="header_search">
-            <a href="#"><span class="material-symbols-rounded icon-light">search</span> Search for products...</a>
+            <span class="material-symbols-rounded icon-light search-mobile">search</span>
+            <a href="#" class="search"><span class="material-symbols-rounded icon-light">search</span> Search for products...</a>
         </section>
         <section class="header_icon">
             <a href="#" class="header_icon-car">
@@ -83,453 +93,456 @@ keyboard_arrow_down
 
         </article>
         <article class="section_principal_img">
-            <img class="section_principal_img-banner" src="./Public/Images/HomePortal.png"
-                 alt="Imagen de portada de Shop.Co" srcset="">
+   <!--         <img class="section_principal_img-banner" src="./Public/Images/HomePortal.png"
+                 alt="Imagen de portada de Shop.Co" srcset="">-->
         </article>
     </section>
 
-    <section class="section_brands">
-        <article class="section_brands-images">
-            <img src="./Public/Images/Brands/Versage.png" alt="" srcset="">
-            <img src="./Public/Images/Brands/Zara.png" alt="" srcset="">
-            <img src="./Public/Images/Brands/Gucci.png" alt="" srcset="">
-            <img src="./Public/Images/Brands/Prada.png" alt="" srcset="">
-            <img src="./Public/Images/Brands/CalvinKlein.png" alt="" srcset="">
-        </article>
-    </section>
 
-    <section class="home_section">
-        <div class="home_section_container">
-            <div class="home_section_container-txt">
-                <h3 class="home_section_container-txt-title">Nuevas llegadas</h3>
-            </div>
-
-            <article class="products_line">
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-
-
-            </article>
-
-            <div class="home_section_button">
-                <button class="button">Ver más</button>
-            </div>
-
-
-        </div>
-    </section>
-
-    <div class="home-line">
-        <div class="home-line-color"></div>
-    </div>
-
-    <section class="home_section">
-        <div class="home_section_container">
-            <div class="home_section_container-txt">
-                <h3 class="home_section_container-txt-title">Top de ventas</h3>
-            </div>
-
-            <article class="products_line">
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="product">
-                    <div class="product_img">
-                        <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
-                    </div>
-                    <div class="product_txt">
-                        <h4 class="product_txt-title">Nombre del Producto</h4>
-
-                        <div class="product_stars">
-                            <div class="product_stars_container">
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                                <span class="material-symbols-rounded star">star</span>
-                            </div>
-                            <div class="product_star-value">
-                                <h6 class="product_start-value-title">4/5</h6>
-                            </div>
-                        </div>
-
-                        <div class="product_prices">
-                            <p class="price">$120</p>
-                            <p class="price_old">$100</p>
-                            <p class="price_percentage">20%</p>
-                        </div>
-                    </div>
-                </article>
-
-
-            </article>
-
-            <div class="home_section_button">
-                <button class="button">Ver más</button>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section class="home_categories">
-        <div class="home_categories-content">
-            <h3 class="categories-title">Busca por estilos</h3>
-
-            <article class="categories-product">
-                <article class="categories_product_article small">
-                    <img src="./Public/Images/Test/Frame%2061.png" alt=""></article>
-                <article class="categories_product_article large">
-                    <img src="./Public/Images/Test/Frame%2062.png" alt=""></article>
-                <article class="categories_product_article large">
-                    <img src="./Public/Images/Test/Frame%2064.png" alt=""></article>
-                <article class="categories_product_article small">
-                    <img src="./Public/Images/Test/Frame%2063.png" alt=""></article>
-            </article>
-        </div>
-    </section>
-
-    <section class="home_review">
-        <div class="home_review_container">
-            <div class="home_review_txt">
-                <h5 class="home_review_txt-title">OPINIONES DE CLIENTES</h5>
-                <div class="home_review_txt_arrow">
-                    <span class="material-symbols-rounded arrow">arrow_back</span>
-                    <span class="material-symbols-rounded arrow">arrow_forward</span>
-                </div>
-
-            </div>
-            <section class="review-list">
-                <article class="review">
-                    <div class="review-star">
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                    </div>
-                    <div class="review-name">
-                        <h5 class="name">Sarah M.
-                        </h5>
-                        <div class="verify">
-                            <span class="material-symbols-rounded">check_circle</span>
-                        </div>
-                    </div>
-                    <div class="review-description">Estoy alucinada con la calidad y el estilo de la ropa que he
-                        recibido de Shop.co. Desde ropa informal hasta vestidos elegantes, cada pieza que he comprado ha
-                        superado mis expectativas.
-                    </div>
-                </article>
-                <article class="review">
-                    <div class="review-star">
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                    </div>
-                    <div class="review-name">
-                        <h5 class="name">Sarah M.
-                        </h5>
-                        <div class="verify">
-                            <span class="material-symbols-rounded">check_circle</span>
-                        </div>
-                    </div>
-                    <div class="review-description">Estoy alucinada con la calidad y el estilo de la ropa que he
-                        recibido de Shop.co. Desde ropa informal hasta vestidos elegantes, cada pieza que he comprado ha
-                        superado mis expectativas.
-                    </div>
-                </article>
-                <article class="review">
-                    <div class="review-star">
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                        <span class="material-symbols-rounded star">star</span>
-                    </div>
-                    <div class="review-name">
-                        <h5 class="name">Sarah M.
-                        </h5>
-                        <div class="verify">
-                            <span class="material-symbols-rounded">check_circle</span>
-                        </div>
-                    </div>
-                    <div class="review-description">Estoy alucinada con la calidad y el estilo de la ropa que he
-                        recibido de Shop.co. Desde ropa informal hasta vestidos elegantes, cada pieza que he comprado ha
-                        superado mis expectativas.
-                    </div>
-                </article>
-            </section>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-
-    <section class="footer_container">
-
-        <section class="footer_contact">
-            <article class="footer_contact-txt">
-                <h4 class="footer_contact-txt-title title">MANTÉNGASE AL DÍA SOBRE NUESTRAS ÚLTIMAS OFERTAS</h4>
-            </article>
-            <article class="footer_contact-btn">
-                <input class="btn-email btn" type="email" name="" id="" placeholder="emailexample@example.com">
-                <input class="btn-btn btn" type="button" value="Suscribete a la NewsLetter">
+        <section class="section_brands">
+            <article class="section_brands-images">
+                <img src="./Public/Images/Brands/Versage.png" alt="" srcset="">
+                <img src="./Public/Images/Brands/Zara.png" alt="" srcset="">
+                <img src="./Public/Images/Brands/Gucci.png" alt="" srcset="">
+                <img src="./Public/Images/Brands/Prada.png" alt="" srcset="">
+                <img src="./Public/Images/Brands/CalvinKlein.png" alt="" srcset="">
             </article>
         </section>
 
-        <section class="footer_info">
-            <article class="footer_info-about"  >
-                <h3 class="footer_info-title"><img src="./Public/Images/Logo.png" alt="" class="img"></h3>
-                <p class="footer_info-description">Nosotros tenemos ropa que tu define tu estiloy con la cual tu deseas vestir. Tenemos ropa para hombre
-                    y mujer</p>
-                <div class="footer_info-social">
-                    <div class="social"><img src="./Public/Images/Logos/Social/X.png" alt="" class="img"></div>
-                    <div class="social"><img src="./Public/Images/Logos/Social/FACEBOOK.png" alt="" class="img"></div>
-                    <div class="social"><img src="./Public/Images/Logos/Social/INSTAGRAM.png" alt="" class="img"></div>
-                    <div class="social"><img src="./Public/Images/Logos/Social/GITHUB.png" alt="" class="img"></div>
+    <!--
+        <section class="home_section">
+            <div class="home_section_container">
+                <div class="home_section_container-txt">
+                    <h3 class="home_section_container-txt-title">Nuevas llegadas</h3>
                 </div>
 
-            </article>
+                <article class="products_line">
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
 
-            <article class="footer_info-links" >
-                <div class="footer_info-links-section">
-                    <h3 class="footer_info-links-subtitle">EMPRESA</h3>
-                    <ul class="footer_info-links-list">
-                        <li class="item">Nosotros</li>
-                        <li class="item">Sorpresas</li>
-                        <li class="item">Trabajo</li>
-                        <li class="item">Carreras</li>
-                    </ul>
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
+
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
+
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
+
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+
+
+                </article>
+
+                <div class="home_section_button">
+                    <button class="button">Ver más</button>
                 </div>
-                <div class="footer_info-links-section">
-                    <h3 class="footer_info-links-subtitle">Ayuda</h3>
-                    <ul class="footer_info-links-list">
-                        <li class="item">Soporte</li>
-                        <li class="item">Detalle de envio</li>
-                        <li class="item">Terminos y Condiciones</li>
-                        <li class="item">Politica y privacidad</li>
-                    </ul>
-                </div>
-                <div class="footer_info-links-section">
-                    <h3 class="footer_info-links-subtitle">Preguntas frecuentes</h3>
-                    <ul class="footer_info-links-list">
-                        <li class="item">Cuentas</li>
-                        <li class="item">Cuentas para Vender</li>
-                        <li class="item">Envios</li>
-                        <li class="item">Métodos de pago</li>
-                    </ul>
-                </div>
-            </article>
+
+
+            </div>
         </section>
 
         <div class="home-line">
             <div class="home-line-color"></div>
         </div>
 
-        <section class="footer_credits">
-            <div class="footer_credits-txt">
-                <h3 class="title">Shop.co 2000-2023, All Right Reserved</h3>
-            </div>
-            <div class="footer_credits-logos">
-                <div class="logo"><img src="Public/Images/Logos/PayMethod/VISA.png" alt="" class="img"></div>
-                <div class="logo"><img src="Public/Images/Logos/PayMethod/MASTERCARD.png" alt="" class="img"></div>
-                <div class="logo"><img src="Public/Images/Logos/PayMethod/PAYPAL.png" alt="" class="img"></div>
-                <div class="logo"><img src="Public/Images/Logos/PayMethod/APPLEPAY.png" alt="" class="img"></div>
+        <section class="home_section">
+            <div class="home_section_container">
+                <div class="home_section_container-txt">
+                    <h3 class="home_section_container-txt-title">Top de ventas</h3>
+                </div>
+
+                <article class="products_line">
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
+
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
+
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
+
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product_img">
+                            <img src="./Public/Images/Test/Frame%2032.png" alt="" srcset="" class="product_img-img">
+                        </div>
+                        <div class="product_txt">
+                            <h4 class="product_txt-title">Nombre del Producto</h4>
+
+                            <div class="product_stars">
+                                <div class="product_stars_container">
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                    <span class="material-symbols-rounded star">star</span>
+                                </div>
+                                <div class="product_star-value">
+                                    <h6 class="product_start-value-title">4/5</h6>
+                                </div>
+                            </div>
+
+                            <div class="product_prices">
+                                <p class="price">$120</p>
+                                <p class="price_old">$100</p>
+                                <p class="price_percentage">20%</p>
+                            </div>
+                        </div>
+                    </article>
+
+
+                </article>
+
+                <div class="home_section_button">
+                    <button class="button">Ver más</button>
+                </div>
+
+
             </div>
         </section>
-    </section>
 
-</footer>
+        <section class="home_categories">
+            <div class="home_categories-content">
+                <h3 class="categories-title">Busca por estilos</h3>
 
+                <article class="categories-product">
+                    <article class="categories_product_article small">
+                        <img src="./Public/Images/Test/Frame%2061.png" alt=""></article>
+                    <article class="categories_product_article large">
+                        <img src="./Public/Images/Test/Frame%2062.png" alt=""></article>
+                    <article class="categories_product_article large">
+                        <img src="./Public/Images/Test/Frame%2064.png" alt=""></article>
+                    <article class="categories_product_article small">
+                        <img src="./Public/Images/Test/Frame%2063.png" alt=""></article>
+                </article>
+            </div>
+        </section>
+
+        <section class="home_review">
+            <div class="home_review_container">
+                <div class="home_review_txt">
+                    <h5 class="home_review_txt-title">OPINIONES DE CLIENTES</h5>
+                    <div class="home_review_txt_arrow">
+                        <span class="material-symbols-rounded arrow">arrow_back</span>
+                        <span class="material-symbols-rounded arrow">arrow_forward</span>
+                    </div>
+
+                </div>
+                <section class="review-list">
+                    <article class="review">
+                        <div class="review-star">
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                        </div>
+                        <div class="review-name">
+                            <h5 class="name">Sarah M.
+                            </h5>
+                            <div class="verify">
+                                <span class="material-symbols-rounded">check_circle</span>
+                            </div>
+                        </div>
+                        <div class="review-description">Estoy alucinada con la calidad y el estilo de la ropa que he
+                            recibido de Shop.co. Desde ropa informal hasta vestidos elegantes, cada pieza que he comprado ha
+                            superado mis expectativas.
+                        </div>
+                    </article>
+                    <article class="review">
+                        <div class="review-star">
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                        </div>
+                        <div class="review-name">
+                            <h5 class="name">Sarah M.
+                            </h5>
+                            <div class="verify">
+                                <span class="material-symbols-rounded">check_circle</span>
+                            </div>
+                        </div>
+                        <div class="review-description">Estoy alucinada con la calidad y el estilo de la ropa que he
+                            recibido de Shop.co. Desde ropa informal hasta vestidos elegantes, cada pieza que he comprado ha
+                            superado mis expectativas.
+                        </div>
+                    </article>
+                    <article class="review">
+                        <div class="review-star">
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                            <span class="material-symbols-rounded star">star</span>
+                        </div>
+                        <div class="review-name">
+                            <h5 class="name">Sarah M.
+                            </h5>
+                            <div class="verify">
+                                <span class="material-symbols-rounded">check_circle</span>
+                            </div>
+                        </div>
+                        <div class="review-description">Estoy alucinada con la calidad y el estilo de la ropa que he
+                            recibido de Shop.co. Desde ropa informal hasta vestidos elegantes, cada pieza que he comprado ha
+                            superado mis expectativas.
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <section class="footer_container">
+
+            <section class="footer_contact">
+                <article class="footer_contact-txt">
+                    <h4 class="footer_contact-txt-title title">MANTÉNGASE AL DÍA SOBRE NUESTRAS ÚLTIMAS OFERTAS</h4>
+                </article>
+                <article class="footer_contact-btn">
+                    <input class="btn-email btn" type="email" name="" id="" placeholder="emailexample@example.com">
+                    <input class="btn-btn btn" type="button" value="Suscribete a la NewsLetter">
+                </article>
+            </section>
+
+            <section class="footer_info">
+                <article class="footer_info-about"  >
+                    <h3 class="footer_info-title"><img src="./Public/Images/Logo.png" alt="" class="img"></h3>
+                    <p class="footer_info-description">Nosotros tenemos ropa que tu define tu estiloy con la cual tu deseas vestir. Tenemos ropa para hombre
+                        y mujer</p>
+                    <div class="footer_info-social">
+                        <div class="social"><img src="./Public/Images/Logos/Social/X.png" alt="" class="img"></div>
+                        <div class="social"><img src="./Public/Images/Logos/Social/FACEBOOK.png" alt="" class="img"></div>
+                        <div class="social"><img src="./Public/Images/Logos/Social/INSTAGRAM.png" alt="" class="img"></div>
+                        <div class="social"><img src="./Public/Images/Logos/Social/GITHUB.png" alt="" class="img"></div>
+                    </div>
+
+                </article>
+
+                <article class="footer_info-links" >
+                    <div class="footer_info-links-section">
+                        <h3 class="footer_info-links-subtitle">EMPRESA</h3>
+                        <ul class="footer_info-links-list">
+                            <li class="item">Nosotros</li>
+                            <li class="item">Sorpresas</li>
+                            <li class="item">Trabajo</li>
+                            <li class="item">Carreras</li>
+                        </ul>
+                    </div>
+                    <div class="footer_info-links-section">
+                        <h3 class="footer_info-links-subtitle">Ayuda</h3>
+                        <ul class="footer_info-links-list">
+                            <li class="item">Soporte</li>
+                            <li class="item">Detalle de envio</li>
+                            <li class="item">Terminos y Condiciones</li>
+                            <li class="item">Politica y privacidad</li>
+                        </ul>
+                    </div>
+                    <div class="footer_info-links-section">
+                        <h3 class="footer_info-links-subtitle">Preguntas frecuentes</h3>
+                        <ul class="footer_info-links-list">
+                            <li class="item">Cuentas</li>
+                            <li class="item">Cuentas para Vender</li>
+                            <li class="item">Envios</li>
+                            <li class="item">Métodos de pago</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <div class="home-line">
+                <div class="home-line-color"></div>
+            </div>
+
+            <section class="footer_credits">
+                <div class="footer_credits-txt">
+                    <h3 class="title">Shop.co 2000-2023, All Right Reserved</h3>
+                </div>
+                <div class="footer_credits-logos">
+                    <div class="logo"><img src="Public/Images/Logos/PayMethod/VISA.png" alt="" class="img"></div>
+                    <div class="logo"><img src="Public/Images/Logos/PayMethod/MASTERCARD.png" alt="" class="img"></div>
+                    <div class="logo"><img src="Public/Images/Logos/PayMethod/PAYPAL.png" alt="" class="img"></div>
+                    <div class="logo"><img src="Public/Images/Logos/PayMethod/APPLEPAY.png" alt="" class="img"></div>
+                </div>
+            </section>
+        </section>
+
+    </footer>
+
+
+    -->
+
+</main>
 </body>
-
 <script src="./index.js"></script>
 </html>
-
-

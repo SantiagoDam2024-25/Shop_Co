@@ -6,7 +6,7 @@
     padding: 5rem 0 2rem;
 
     .home_section_container {
-        width: calc(100vw - 10.5rem);
+        width: var(--f-width-lg);
 
         .home_section_container-txt {
             width: 100%;
