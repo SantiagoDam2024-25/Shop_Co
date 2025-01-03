@@ -9,7 +9,7 @@
     --f-family-Satoshi: 'Satoshi', sans-serif;
     --f-family-Integral: 'integral_cfheavy', sans-serif;
     --f-width-lg: calc(100vw - 10.5rem);
-    --f-width-xs: calc(100vw - 5.25rem);
+    --f-width-xs: calc(100vw - 2rem);
 
 }
 
