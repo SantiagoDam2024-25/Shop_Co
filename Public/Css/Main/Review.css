@@ -62,7 +62,7 @@
         }
 
         .review-list{
-            overflow: overlay;
+            overflow: auto;
         }
 
         .home_review_txt {
