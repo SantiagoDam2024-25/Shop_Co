@@ -88,6 +88,7 @@
             width: 70%;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             .footer_info-links-section{
                 width: 100%;
@@ -162,6 +163,42 @@
                 .footer_contact-btn{
                     width: 100%;
                 }
+        }
+
+        .footer_info{
+            flex-direction: column;
+
+            .footer_info-about{
+                    width: 100%;
+                .footer_info-description{
+                    font-size: 1.5rem;
+                    margin-top: 0;
+                }
+            }
+
+            .footer_info-links{
+                width: 100%;
+                justify-content: center;
+
+                .footer_info-links-section{
+                    width: 45%;
+                }
+            }
+        }
+
+        .footer_credits{
+            flex-direction: column;
+            align-items: center;
+
+            .footer_credits-txt{
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer_credits-logos{
+                width: 100%;
+                justify-content: center;
+            }
         }
     }
 }
