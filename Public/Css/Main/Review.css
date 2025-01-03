@@ -7,7 +7,6 @@
 
     .home_review_container{
         width: calc(100vw - 10.5rem);
-
     }
 
     .home_review_txt{
@@ -38,6 +37,7 @@
     }
 
     .review{
+        min-width: 270px;
         width: 100%;
         border: 1px solid #1A1A1A;
         border-radius: 1.25rem;
@@ -52,5 +52,29 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+@media (width < 480px) {
+    .home_review{
+        .home_review_container{
+            width: var(--f-width-xs);
+        }
+
+        .review-list{
+            overflow: overlay;
+        }
+
+        .home_review_txt {
+            .home_review_txt-title {
+                font-size: 2rem;
+            }
+        }
+
+        .home_review_txt_arrow{
+            display: flex;
+            gap: .5rem;
+        }
+
     }
 }
