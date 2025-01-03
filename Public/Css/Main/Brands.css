@@ -9,12 +9,13 @@
     .section_brands-images{
         width: calc(100vw - 10.5rem);
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
     }
 
     img {
+        width: auto;
         height: 33px;
     }
 }
@@ -25,7 +26,6 @@
             padding: 3rem 0;
             width: calc(100vw - 2rem);
             gap: 1.5rem;
-
         }
     }
 }
