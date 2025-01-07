@@ -10,7 +10,8 @@
     align-items: center;
     font-size: clamp(14px, 3vw, 16px);
 }
-    .header_primary {
+
+.header_primary {
         width: var(--f-width-lg);
         max-width: 1440px;
         max-height: 96px;
@@ -99,14 +100,13 @@
         }
 }
 
-@media (width < 480px) {
-
+@media (width < 980px) {
     .header{
         height: auto;
     }
 
     .header_primary{
-        width: calc(100vw - 2rem);
+        width: var(--f-width-md);
 
         .header_nav {
             display: none;
@@ -164,5 +164,11 @@
         .header_burger_ul{
             display: none;
         }
+    }
+}
+
+@media (width < 480px) {
+    .header_primary{
+        width: var(--f-width-xs);
     }
 }
