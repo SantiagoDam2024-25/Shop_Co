@@ -102,3 +102,11 @@
         }
     }
 }
+
+@media (width < 480px) {
+    .home_categories{
+        .home_categories-content{
+            width: var(--f-width-xs);
+        }
+    }
+}
