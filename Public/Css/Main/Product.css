@@ -5,6 +5,8 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    column-gap: 1.5rem;
+    overflow: auto;
 
     .product{
         max-width: 295px;
@@ -88,5 +90,11 @@
                 font-size: 0.75rem;
             }
         }
+    }
+}
+
+@media (width < 480px) {
+    .products_line{
+        gap: 1rem;
     }
 }

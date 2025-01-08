@@ -1,9 +1,10 @@
 .home_section {
+    min-width: 390px;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0 2rem;
+    padding: 5rem 0;
 
     .home_section_container {
         width: var(--f-width-lg);
@@ -43,15 +44,19 @@
     }
 }
 
+@media (width < 992px){
+    .home_section{
+        .home_section_container{
+            width: var(--f-width-md);
+        }
+    }
+}
+
+
 @media (width < 480px){
     .home_section{
         .home_section_container{
             width: var(--f-width-xs);
-        }
-
-        .products_line{
-            gap: 1rem;
-            overflow: auto;
         }
     }
 }
