@@ -39,6 +39,16 @@
     }
 }
 
+@media (width < 980px) {
+    .body{
+        .home-line{
+            .home-line-color{
+                width: var(--f-width-md);
+            }
+        }
+    }
+}
+
 @media (width < 480px) {
     .body{
         .home-line{
