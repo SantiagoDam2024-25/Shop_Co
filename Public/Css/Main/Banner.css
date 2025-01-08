@@ -1,6 +1,7 @@
 .section_principal {
+    min-width: 390px;
     max-width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 128px);
 
     .section_principal_text {
         position: absolute;
@@ -66,7 +67,7 @@
 
     .section_principal_img {
         width: 100%;
-        height: calc(100vh - 128px);
+        height: calc(100vh - 4rem);
         line-height: 0;
         background-image: url("../../Images/HomePortal.png");
         background-size: cover;
@@ -91,6 +92,7 @@
             width: var(--f-width-md);
             gap: 1.50rem;
             padding: 1.5rem 0;
+            text-align: center;
 
             .section_principal_text-button{
                 max-width: 60%;
@@ -101,9 +103,6 @@
             position: static;
             width: 100%;
             height: 60vh;
-            background-image: url("../../Images/HomeMobile.png");
-            background-size: contain;
-            background-position: center;
         }
     }
 }
@@ -139,5 +138,12 @@
             }
         }
 
+        .section_principal_img{
+            height: 50svh;
+            background-image: url("../../Images/HomeMobile.png");
+            background-size: contain;
+            background-position: center;
+            background-size: cover;
+        }
     }
 }
