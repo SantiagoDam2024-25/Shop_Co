@@ -6,7 +6,7 @@
     padding: 2.52rem 0 2rem;
 
     .home_review_container{
-        width: calc(100vw - 10.5rem);
+        width: var(--f-width-lg);
     }
 
     .home_review_txt{
@@ -32,8 +32,9 @@
    .review-list{
         width: 100%;
         display: flex;
-        gap:1.25rem;
-       margin-bottom: 5rem;
+        gap: 1.25rem;
+        margin-bottom: 5rem;
+       overflow: auto;
     }
 
     .review{
@@ -55,14 +56,19 @@
     }
 }
 
+@media (width < 992px) {
+    .home_review{
+        .home_review_container{
+            width: var(--f-width-md);
+        }
+    }
+
+}
+
 @media (width < 480px) {
     .home_review{
         .home_review_container{
             width: var(--f-width-xs);
-        }
-
-        .review-list{
-            overflow: auto;
         }
 
         .home_review_txt {
