@@ -16,6 +16,9 @@
         justify-content: start;
         align-items: start;
         cursor: pointer;
+        text-decoration: none;
+        color: #0d0d0d;
+        cursor: pointer;
 
         .product_img-img{
             width: 295px;
