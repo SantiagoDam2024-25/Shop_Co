@@ -10,8 +10,10 @@
 @import "Main/Categories.css";
 @import "components/ButtonHome.css";
 
-@import "Main/ShowProduct-Section.css";
-@import "Main/Product.css";
+@import "components/ShowProduct-Section.css";
+@import "components/Product.css";
 @import "Main/Review.css";
+
+@import "ProductDetail/Links.css";
 
 @import "Footer/Footer.css";

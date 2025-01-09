@@ -1,0 +1,27 @@
+.section_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    .links {
+        width: var(--f-width-xs);
+        display: flex;
+        gap: .2rem;
+        margin-left: 0;
+        padding-left: 0;
+
+        li{
+            list-style: none;
+        }
+
+        .link{
+            color: #0d0d0d;
+            display: inline;
+        }
+
+        .active{
+            font-weight: bold;
+        }
+    }
+}
