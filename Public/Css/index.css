@@ -10,10 +10,11 @@
 @import "Main/Categories.css";
 @import "components/ButtonHome.css";
 
-@import "components/ShowProduct-Section.css";
-@import "components/Product.css";
+@import "components/Home-Section-Products.css";
+@import "components/Home-Card-Product.css";
 @import "Main/Review.css";
 
 @import "ProductDetail/Links.css";
+@import "components/ProductDetail-Card-Product.css";
 
 @import "Footer/Footer.css";
