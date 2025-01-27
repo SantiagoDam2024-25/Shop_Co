@@ -17,5 +17,7 @@
 @import "ProductDetail/Links.css";
 @import "ProductDetail/ProductDetail-Card-Product.css";
 @import "ProductDetail/Rare.css";
+@import "Shop/Shop.css";
+@import "Shop/filters-settings.css";
 
 @import "Footer/Footer.css";
