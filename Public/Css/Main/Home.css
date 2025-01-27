@@ -2,6 +2,15 @@
     font-size: clamp(0.75rem, 0.526vw + 0.618rem, 1.25rem);
 }*/
 
+.material-symbols-rounded {
+    font-variation-settings:
+            'FILL' 1,
+            'wght' 700,
+            'GRAD' 0,
+            'opsz' 24
+
+}
+
 .body{
 /*    background-color: #0dd316;*/
     min-width: 390px;
@@ -26,11 +35,7 @@
         }
     }
 
-    .star{
-        width: 25px;
-        height: 100%;
-        color: darkgoldenrod;
-    }
+
 
     .verify{
         width: 25px;
@@ -61,3 +66,10 @@
 
 }
 
+
+
+.star{
+    width: 25px;
+    height: 100%;
+    color: #b2820b;
+}

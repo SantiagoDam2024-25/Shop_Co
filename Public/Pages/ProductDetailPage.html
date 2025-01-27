@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de ropa</title>
     <link rel="stylesheet" href="../Css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+
 </head>
-<body>
+<body class="body">
 <header class="header">
     <aside class="header_offer">
         <article class="header_offer_text">
@@ -69,7 +70,19 @@ keyboard_arrow_down</span>
     </section>
 
     <section class="product_detail">
-        <section class="product_detail_photo"></section>
+        <section class="product_detail_photo">
+            <div class="photo-principal">
+                <img src="../Images/ProductDetail/Product-big.png" class="photo-big">
+            </div>
+
+            <div class="photo-secondary">
+                <img src="../Images/ProductDetail/Product-small-1.png" alt="" class="photo-small">
+                <img src="../Images/ProductDetail/Product-small-2.png" alt="" class="photo-small">
+                <img src="../Images/ProductDetail/Product-small-3.png" alt="" class="photo-small">
+            </div>
+        </section>
+
+
         <section class="section_detail_text">
             <article class="section_detail_text-title">
                 <h1 class="title">ONE LIFE GRAPHIC T-SHIRT</h1>
@@ -95,14 +108,20 @@ keyboard_arrow_down</span>
                     breathable fabric, it offters superior comfort and style
                 </p>
             </article>
-            <br>
+            <div class="home-line">
+                <div class="home-line-color"></div>
+            </div>
             <article class="section_detail_text-selects">
                 <h4 class="title">Select Colors</h4>
-                <div class="colors"></div>
-                <div class="colors"></div>
-                <div class="colors"></div>
+                <article class="article_colors">
+                    <div class="colors brown"></div>
+                    <div class="colors green"></div>
+                    <div class="colors blue"></div>
+                </article>
             </article>
-            <br>
+            <div class="home-line">
+                <div class="home-line-color"></div>
+            </div>
             <article class="section_detail_text-choose">
                 <h4 class="title">Choose Size</h4>
                 <article class="article_size">
@@ -112,17 +131,22 @@ keyboard_arrow_down</span>
                     <h5 class="article_size-txt">X-Large</h5>
                 </article>
             </article>
+            <div class="home-line">
+                <div class="home-line-color"></div>
+            </div>
             <article class="section_detail_text-btns">
                 <article class="btns_quantity">
-                    <span class="btns_quantify-subtract"></span>
+                    <span class="material-symbols-rounded">remove</span>
                     <span class="btns_quantify-number">1</span>
-                    <span class="btns_quatify-add"></span>
+                    <span class="material-symbols-rounded">add</span>
                 </article>
                 <article class="btns_car">
                     <a href="#" class="title">Agregar al carrito</a>
                 </article>
             </article>
         </section>
+
+
     </section>
 
 
