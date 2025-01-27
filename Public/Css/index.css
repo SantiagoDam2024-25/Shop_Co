@@ -4,7 +4,7 @@
 @import "Public/Css/Font_Integral/Integral.css";
 @import "Header/Header.css";
 @import "components/BannerSingUp.css";
-@import "Main/Home.css";
+@import "components/Components.css";
 @import "Main/Banner.css";
 @import "Main/Brands.css";
 @import "Main/Categories.css";
@@ -15,6 +15,7 @@
 @import "Main/Review.css";
 
 @import "ProductDetail/Links.css";
-@import "components/ProductDetail-Card-Product.css";
+@import "ProductDetail/ProductDetail-Card-Product.css";
+@import "ProductDetail/Rare.css";
 
 @import "Footer/Footer.css";

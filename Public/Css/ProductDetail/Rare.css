@@ -1,0 +1,102 @@
+.product_rare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    jc-items: center;
+    max-width: 100vw;
+    max-width: 100vw;
+
+    .product_rare_settings {
+        width: var(--f-width-xs);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .8rem;
+
+    }
+    .setting-text{
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+
+        .title{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .value{
+            font-size: .9rem;
+        }
+
+    }
+
+    .setting-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+            /*font-size: 1.2rem;*/
+        .action{
+            padding: 1rem .8rem;
+            background-color: var(--f-color-dark);
+            color: var(--f-color-light);
+            border-radius: 2rem;
+        }
+    }
+
+    .product_rare_text{
+        width: var(--f-width-xs);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .product_rare_review{
+        padding: 1.3rem;
+        border: 1px solid rgba(0, 0, 0, 0.30);
+        border-radius: 2rem;
+        row-gap: .8rem;
+        display: flex;
+        flex-direction: column;
+
+        .principal{
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+
+            .title{
+                font-weight: bold;
+                font-family: var(--f-family-Satoshi);
+                margin: 0;
+            }
+        }
+        .description{
+            font-family: var(--f-family-Satoshi);
+            font-size: .9rem;
+            margin: 0;
+        }
+
+        .date{
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            font-size: .9rem;
+
+            .date-text{
+                margin: 0;
+            }
+        }
+    }
+
+    .product_rate_text-btn{
+        padding-top: 1rem;
+
+        .btn{
+            padding: .9rem 2rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(0,0,0, .30);
+        }
+    }
+}

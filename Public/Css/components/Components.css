@@ -66,10 +66,23 @@
 
 }
 
+.product_stars{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    height: auto;
 
+    .star{
+        width: 25px;
+        height: 100%;
+        color: #b2820b;
+    }
 
-.star{
-    width: 25px;
-    height: 100%;
-    color: #b2820b;
+    h6{
+        margin: 0;
+    }
 }
+
+
+
