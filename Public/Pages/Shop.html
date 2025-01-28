@@ -28,7 +28,8 @@
             </ul>
         </section>
         <section class="header_img">
-            <img src="../Images/Logo.png" alt="Imagen con enlace al shop.co">
+            <a href="../../Index.html"><img src="../Images/Logo.png" alt="Imagen con enlace al shop.co">
+             </a>
         </section>
         <section class="header_nav">
             <nav class="nav">
@@ -67,11 +68,10 @@ keyboard_arrow_down</span>
             <li><a href="#" class="link active">Product Details</a></li>
         </ul>
     </section>
-
     <section class="shop">
         <article class="shop_text">
             <h4 class="title">Casual</h4>
-            <span class="material-symbols-rounded tune">tune</span>
+            <span id="settingBtn" class="material-symbols-rounded tune">tune</span>
         </article>
 
         <sections class="shop_products">
@@ -294,51 +294,91 @@ keyboard_arrow_down</span>
         </sections>
     </section>
 
-    <section class="shop_setting">
+    <section id="settingSection" class="shop_setting">
         <article class="shop_setting_principal">
             <h4 class="title">Filtros</h4>
-            <span class="material-symbols-rounded close">close</span>
+            <span id="closeSetting" class="material-symbols-rounded close">close</span>
         </article>
+        <div class="home-line">
+            <div class="home-line-color"></div>
+        </div>
         <article class="shop_setting_types">
-            <details class="type">
-                <summary>Camisas</summary>
-                <span class="material-symbols-rounded">arrow_forward_ios</span>
+            <details class="detail"->
+                <summary> <span class="material-symbols-rounded close">arrow_forward_ios</span>Camisas</summary>
+                <article class="detail-content">
+                    <span>Manga corta</span>
+                    <span>Manga larga</span>
+                    <span>Camisa de Leñador</span>
+                </article>
             </details>
-            <div class="type">
-                <span>Shorts</span>
-                <span class="material-symbols-rounded">arrow_forward_ios</span>
-            </div>
-            <div class="type">
-                <span>Flanelas</span>
-                <span class="material-symbols-rounded">arrow_forward_ios</span>
-            </div>
-            <div class="type">
-                <span>Sueteres</span>
-                <span class="material-symbols-rounded">arrow_forward_ios</span>
-            </div>
-            <div class="type">
-                <span>Pantalones</span>
-                <span class="material-symbols-rounded">arrow_forward_ios</span>
-            </div>
+            <details class="detail">
+                <summary>
+                    <span class="material-symbols-rounded close">arrow_forward_ios</span>
+                Pantalones Cortos</summary>
+                <article class="detail-content">
+                    <span>Vaquero</span>
+                    <span>Chandal</span>
+                    <span>De Vestir</span>
+                    <span>Deportivo</span>
+                    <span>Bañadores</span>
+                </article>
+            </details>
+            <details class="detail">
+                <summary><span class="material-symbols-rounded close">arrow_forward_ios</span>
+                Flanelas</summary>
+                <article class="detail-content">
+                    <span>Tirantes</span>
+                    <span>Chandal</span>
+                    <span>Disney</span>
+                    <span>Calvin clean</span>
+                </article>
+            </details>
+            <details class="detail">
+                <summary>
+                <span class="material-symbols-rounded close">arrow_forward_ios</span>
+                    Sueteres</summary>
+                <article class="detail-content">
+                    <span>Elegante</span>
+                    <span>Térmicos</span>
+                    <span>Vaqueros</span>
+                    <span>Chandal</span>
+                    <span>Deporte</span>
+                </article>
+            </details>
+            <details class="detail">
+                <summary><span class="material-symbols-rounded close">arrow_forward_ios</span>
+                Pantalones</summary>
+                    <article class="detail-content">
+                        <span>largo</span>
+                        <span>vaqueros</span>
+                    </article>
+            </details>
         </article>
         <div class="home-line">
             <div class="home-line-color"></div>
         </div>
 
-        <details class="shop_setting_price">
-            <summary class="title">Precio</summary>
+<!--Precio-->
+        <details class="detail">
+            <summary><span class="material-symbols-rounded close">arrow_forward_ios</span>
+                Precio</summary>
             <div class="inputPrice">
-                <input type="range" name="price" id="price" minlength="€0" maxlength="€200">
+                <label>
+                    Desde:<input class="priceBtn" type="text" placeholder="50€" >
+                </label>
+                <label >Hasta:<input class="priceBtn" type="text" placeholder="200€" >
+                </label>
             </div>
         </details>
 
         <div class="home-line">
             <div class="home-line-color"></div>
         </div>
-
-        <details class="shop_setting_colors">
-            <summary class="title">Colores</summary>
-            <div class="colores">
+<!--colores-->
+        <details class="detail">
+            <summary class="title"><span class="material-symbols-rounded close">arrow_forward_ios</span>
+                Colores</summary>
+            <article class="detail-content-color">
                 <div class="color green"></div>
                 <div class="color red"></div>
                 <div class="color yellow"></div>
@@ -349,7 +389,7 @@ keyboard_arrow_down</span>
                 <div class="color pink"></div>
                 <div class="color white"></div>
                 <div class="color black"></div>
-            </div>
+            </article>
 
         </details>
 
@@ -357,11 +397,13 @@ keyboard_arrow_down</span>
             <div class="home-line-color"></div>
         </div>
 
-        <details class="shop_setting_size">
-            <summary class="title">Tallas</summary>
-            <div class="sizes">
+<!--tallas-->
+        <details class="detail">
+            <summary class="title"><span class="material-symbols-rounded close">arrow_forward_ios</span>
+                Tallas</summary>
+            <article class="detail-content-sizes">
                 <span class="size">XXS</span>
-                <span class="size">XS</span>
+                <span class="size active">XS</span>
                 <span class="size">S</span>
                 <span class="size">M</span>
                 <span class="size">L</span>
@@ -369,43 +411,95 @@ keyboard_arrow_down</span>
                 <span class="size">XXL</span>
                 <span class="size">3XL</span>
                 <span class="size">4XL</span>
-            </div>
+            </article>
         </details>
 
         <div class="home-line">
             <div class="home-line-color"></div>
         </div>
 
-        <details class="shop_setting_dress">
-            <summary class="title">Tipo de vestimenta</summary>
-            <article class="dresses">
-                <div class="dress">
-                    <span class="title">Casual</span>
-                    <span class="material-symbols-rounded">arrow_forward_ios</span>
-                </div>
-                <div class="dress">
-                    <span class="title">Formal</span>
-                    <span class="material-symbols-rounded">arrow_forward_ios</span>
-                </div>
-                <div class="dress">
-                    <span class="title">Party</span>
-                    <span class="material-symbols-rounded">arrow_forward_ios</span>
-                </div>
-                <div class="dress">
-                    <span class="title">GYM</span>
-                    <span class="material-symbols-rounded">arrow_forward_ios</span>
-                </div>
-            </article>
-        </details>
-
     </section>
 
 </main>
 
+<footer class="footer">
+    <section class="footer_container">
+        <section class="footer_contact">
+            <article class="footer_contact-txt">
+                <h4 class="footer_contact-txt-title title">MANTÉNGASE AL DÍA SOBRE NUESTRAS ÚLTIMAS OFERTAS</h4>
+            </article>
+            <article class="footer_contact-btn">
+                <input class="btn-email btn" type="email" name="" id="" placeholder="emailexample@example.com">
+                <input class="btn-btn btn" type="button" value="Suscribete a la NewsLetter">
+            </article>
+        </section>
+        <section class="footer_info">
+            <article class="footer_info-about"  >
+                <h3 class="footer_info-title"><img src="./Public/Images/Logo.png" alt="" class="img"></h3>
+                <p class="footer_info-description">Nosotros tenemos ropa que tu define tu estiloy con la cual tu deseas vestir. Tenemos ropa para hombre
+                    y mujer</p>
+                <div class="footer_info-social">
+                    <div class="social"><img src="./Public/Images/Logos/Social/X.png" alt="" class="img"></div>
+                    <div class="social"><img src="./Public/Images/Logos/Social/FACEBOOK.png" alt="" class="img"></div>
+                    <div class="social"><img src="./Public/Images/Logos/Social/INSTAGRAM.png" alt="" class="img"></div>
+                    <div class="social"><img src="./Public/Images/Logos/Social/GITHUB.png" alt="" class="img"></div>
+                </div>
+
+            </article>
+
+            <article class="footer_info-links" >
+                <div class="footer_info-links-section">
+                    <h3 class="footer_info-links-subtitle">EMPRESA</h3>
+                    <ul class="footer_info-links-list">
+                        <li class="item">Nosotros</li>
+                        <li class="item">Sorpresas</li>
+                        <li class="item">Trabajo</li>
+                        <li class="item">Carreras</li>
+                    </ul>
+                </div>
+                <div class="footer_info-links-section">
+                    <h3 class="footer_info-links-subtitle">Ayuda</h3>
+                    <ul class="footer_info-links-list">
+                        <li class="item">Soporte</li>
+                        <li class="item">Detalle de envio</li>
+                        <li class="item">Terminos y Condiciones</li>
+                        <li class="item">Politica y privacidad</li>
+                    </ul>
+                </div>
+                <div class="footer_info-links-section">
+                    <h3 class="footer_info-links-subtitle">Preguntas frecuentes</h3>
+                    <ul class="footer_info-links-list">
+                        <li class="item">Cuentas</li>
+                        <li class="item">Cuentas para Vender</li>
+                        <li class="item">Envios</li>
+                        <li class="item">Métodos de pago</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <div class="home-line">
+            <div class="home-line-color"></div>
+        </div>
+
+        <section class="footer_credits">
+            <div class="footer_credits-txt">
+                <h3 class="title">Shop.co 2000-2023, All Right Reserved</h3>
+            </div>
+            <div class="footer_credits-logos">
+                <div class="logo"><img src="Public/Images/Logos/PayMethod/VISA.png" alt="" class="img"></div>
+                <div class="logo"><img src="Public/Images/Logos/PayMethod/MASTERCARD.png" alt="" class="img"></div>
+                <div class="logo"><img src="Public/Images/Logos/PayMethod/PAYPAL.png" alt="" class="img"></div>
+                <div class="logo"><img src="Public/Images/Logos/PayMethod/APPLEPAY.png" alt="" class="img"></div>
+            </div>
+        </section>
+    </section>
+
+</footer>
 
 
 
-<script src="./index.js"></script>
+
+<script src="../../index.js"></script>
 
 
 </body>
