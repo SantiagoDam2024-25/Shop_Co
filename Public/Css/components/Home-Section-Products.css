@@ -34,6 +34,7 @@
         align-items: center;
 
         .button{
+            text-decoration: none;
             background: none;
             padding: 1rem 6rem;
             border-radius: 4rem;

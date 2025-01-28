@@ -41,6 +41,7 @@
             border-radius: 4rem;
             border: none;
             cursor: pointer;
+            text-decoration: none;
         }
     }
 
