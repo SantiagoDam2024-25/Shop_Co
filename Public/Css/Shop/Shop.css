@@ -101,3 +101,39 @@
         }
     }
 }
+
+
+
+@media (width > 480px ){
+    .shop{
+        .shop_text{
+            width: var(--f-width-md);
+        }
+
+        .shop_products{
+            width: var(--f-width-md);
+            row-gap: 2rem;
+            column-gap: 3rem;
+
+            .product{
+                max-width: 295px;
+                min-height: 380px;
+            }
+        }
+    }
+}
+
+@media (width > 980px ){
+    .shop{
+        .shop_text{
+            width: var(--f-width-lg);
+        }
+
+        .shop_products{
+            max-width: 1280px;
+            width: var(--f-width-lg);
+            row-gap: 2rem;
+            column-gap: 3rem;
+        }
+    }
+}

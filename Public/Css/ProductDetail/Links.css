@@ -25,3 +25,19 @@
         }
     }
 }
+
+@media ( width > 480px) {
+    .section_links {
+        .links{
+            width: var(--f-width-md);
+        }
+    }
+}
+
+@media ( width > 980px) {
+    .section_links {
+        .links{
+            width: var(--f-width-lg);
+        }
+    }
+}

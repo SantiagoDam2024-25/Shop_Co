@@ -9,7 +9,6 @@
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    padding: 1.5rem;
     gap: 1rem;
     position: fixed;
     bottom: 0;
@@ -43,7 +42,6 @@
 
     }
 
-
     .detail-content {
         display: flex;
         flex-direction: column;
@@ -70,7 +68,7 @@
     .detail-content-color{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: start;
         gap: 1.5rem;
         flex-wrap: wrap;
 
@@ -140,3 +138,17 @@
     }
 }
 
+@media (width > 480px ){
+    .shop_setting{
+        width: 40vw;
+        max-width: 350px;
+        min-height: 70svh;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 2rem;
+        bottom: 4rem;
+
+        .detail-content-color{
+            gap: .8rem;
+        }
+    }
+}
