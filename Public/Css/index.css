@@ -1,18 +1,18 @@
 @import "Normalize.css";
 @import "./rules.css";
-@import "Public/Css/Font_Satoshi/Satochi.css";
-@import "Public/Css/Font_Integral/Integral.css";
+@import "./Font_Satoshi/Satochi.css";
+@import "./Font_Integral/Integral.css";
 @import "Header/Header.css";
 @import "components/BannerSingUp.css";
 @import "components/Components.css";
 @import "Main/Banner.css";
 @import "Main/Brands.css";
+@import "Main/Review.css";
 @import "Main/Categories.css";
 @import "components/ButtonHome.css";
-
 @import "components/Home-Section-Products.css";
 @import "components/Home-Card-Product.css";
-@import "Main/Review.css";
+@import "components/Loader.css";
 
 @import "ProductDetail/Links.css";
 @import "ProductDetail/ProductDetail-Card-Product.css";
