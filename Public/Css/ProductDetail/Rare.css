@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    jc-items: center;
-    max-width: 100vw;
+    justify-content: center;
     max-width: 100vw;
 
     .product_rare_settings {
@@ -97,6 +96,42 @@
             padding: .9rem 2rem;
             border-radius: 2rem;
             border: 1px solid rgba(0,0,0, .30);
+        }
+    }
+}
+
+@media (width > 480px) {
+    .product_rare{
+
+        .product_rare_settings{
+            width: var(--f-width-md);
+        }
+
+        .product_rare_text{
+            width: var(--f-width-md);
+        }
+    }
+}
+
+@media (width > 980px) {
+    .product_rare{
+
+        .product_rare_settings{
+            width: var(--f-width-lg);
+        }
+
+        .product_rare_text{
+            width: var(--f-width-lg);
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .product_rare_review{
+            width: 45%;
+            max-width: 350px;
         }
     }
 }

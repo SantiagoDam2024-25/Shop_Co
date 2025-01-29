@@ -111,6 +111,7 @@
                 height: 2.5rem;
                 border-radius: 1.5rem;
                 background: var(--f-color-price-old);
+                cursor: pointer;
             }
 
             .brown{
@@ -143,6 +144,7 @@
                 border-radius: 1rem;
                 background-color: var(--f-color-light);
                 color: var(--f-color-dark);
+                cursor: pointer;
             }
         }
 
@@ -163,18 +165,80 @@
             background-color: var(--f-color-light);
             padding: 1rem 1rem;
             border-radius: 2rem;
+            cursor: pointer;
         }
 
         .title{
-            padding: 1rem 4rem;
+            padding: 1rem 3rem;
             background-color: var(--f-color-dark);
             color: var(--f-color-light);
             border-radius: 2rem;
             text-decoration: none;
+            cursor: pointer;
         }
     }
 }
 
 .topVenta{
     margin-bottom: 2rem;
+}
+
+@media (width > 480px){
+    .product_detail{
+
+        .product_detail_photo {
+            width: var(--f-width-md);
+        }
+
+        .section_detail_text{
+            width: var(--f-width-md);
+        }
+
+    }
+}
+
+@media (width > 980px){
+    .product_detail{
+        flex-direction: row;
+        gap: 2rem;
+
+        .product_detail_photo {
+            padding-left: 5.5rem;
+            flex-direction: row-reverse;
+            align-items: center;
+            max-width: 600px;
+            width: 70vw;
+            gap: 0;
+
+            .photo-big{
+                min-width: 300px;
+                height: 500px;
+
+            }
+
+            .photo-secondary {
+                flex-direction: column;
+                height: 500px;
+                width: 200px;
+            }
+
+            .photo-small{
+                max-width: 130px;
+                height: 150px;
+            }
+
+        }
+
+        .section_detail_text{
+            padding-right: 5.5rem;
+            max-width: 30vw;
+        }
+
+        .section_detail_text-btns{
+            .title{
+               padding: 1rem 2rem;
+                text-wrap: nowrap;
+            }
+        }
+    }
 }
