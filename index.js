@@ -1,7 +1,6 @@
-// import "./Public/Js/Components/BtnsOpenClose.js";
 console.log('Happy developing from Home✨')
-
 import { fetchHome } from "./Public/Js/Services/Api.js";
+
 const productsContainer = document.querySelectorAll('.products_line');
 const loaderHome = document.querySelectorAll('.loader_home');
 

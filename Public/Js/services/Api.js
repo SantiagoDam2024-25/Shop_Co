@@ -3,6 +3,11 @@ export const fetchHome = async () => {
         return res.json();
 }
 
+export const fetchAllProducts = async () => {
+    const res = await fetch('https://fakestoreapi.com/products');
+    return res.json();
+}
+
 
 // fetch('https://fakestoreapi.com/products?limit=5')
 //     .then(res => res.json())

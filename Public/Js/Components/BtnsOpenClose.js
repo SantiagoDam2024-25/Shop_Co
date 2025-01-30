@@ -20,6 +20,7 @@
 
 // BtnsOpenClose.js
 
+
 const settingSection = document.getElementById('settingSection');
 const settingBtn = document.getElementById("settingBtn");
 const closeSetting = document.getElementById("closeSetting");
