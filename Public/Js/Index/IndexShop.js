@@ -1,4 +1,5 @@
 import { fetchAllProducts } from "../services/Api.js"
+import "../Components/BtnsOpenClose.js";
 
 const shopProducts = document.getElementsByClassName('shop_products')
 const loaderShop = document.querySelectorAll(".loader")
@@ -6,14 +7,12 @@ const productsPerPage = 10; // Cantidad de productos por página
 const currentPage = 1; // Página actual (cambiar dinámicamente)
 const startIndex = (currentPage - 1) * productsPerPage; // Índice inicial
 const endIndex = startIndex + productsPerPage; // Índice final
-console.log(shopProducts)
 
 document.addEventListener('DOMContentLoaded', async (e) => {
     try{
         const products = await fetchAllProducts();
         const productsToShow = products.slice(startIndex, endIndex);
         productsToShow.forEach(product => {
-            console.log(product)
             const productLink = document.createElement('a');
             productLink.classList.add('product');
             productLink.href = "./ProductDetailPage.html";

@@ -5,7 +5,6 @@ const productsContainer = document.querySelectorAll('.products_line');
 const loaderHome = document.querySelectorAll('.loader_home');
 
 productsContainer.forEach(productConteiner => {
-
     document.addEventListener("DOMContentLoaded", async () => {
         try {
             const products = await fetchHome();
@@ -13,8 +12,10 @@ productsContainer.forEach(productConteiner => {
                 // Crear el elemento 'a' del producto
                 const productLink = document.createElement('a');
                 productLink.classList.add('product');
-                productLink.href = "Public/Pages/ProductDetailPage.html";
-
+                productLink.setAttribute('data-id', product.id);
+                // productLink.href = `./ProductDetailPage?${product.id}`;
+                productLink.href = `Public/Pages/ProductDetailPage.html?${product.id}`;
+                // window.location.href= `Public/Pages/ProductDetailPage/${product.id}`;
                 // Crear el contenedor de la imagen
                 const productImgDiv = document.createElement('div');
                 productImgDiv.classList.add('product_img');
@@ -102,3 +103,11 @@ productsContainer.forEach(productConteiner => {
 })
 
 
+// document.querySelectorAll('.product').forEach(product => {
+//     product.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         console.log('clicked');
+//         const productId = product.getAttribute('data-id');
+//         window.location.href = `ProductDetails.html?id=${productId}`;
+//     });
+// });
