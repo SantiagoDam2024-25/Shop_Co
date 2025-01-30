@@ -1,7 +1,21 @@
 import { fetchProducts } from "../services/Api.js";
+const params = new URLSearchParams(window.location.search.substring(1));
+let valueCar = 0;
+document.addEventListener("click", (event) => {
+    let valueCar = document.getElementById("value");
+
+    console.log(valueCar.innerText)
+    if (event.target.classList.contains("more")) {
+        valueCar.innerText++;
+
+        console.log("Sumar producto al carrito", valueCar);
+    } else if (event.target.classList.contains("less") && (valueCar.innerText > 1)) {
+        --valueCar.innerText;
+        console.log("Restar producto del carrito", valueCar);
+    }
+});
 
 console.log('Hola desde ProductDetails');
-const params = new URLSearchParams(window.location.search.substring(1));
 
 document.addEventListener("DOMContentLoaded", async () => {
     const product = await fetchProducts(window.location.search.substring(1));
@@ -67,18 +81,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                     </div>
                     <article class="section_detail_text-btns">
                         <article class="btns_quantity">
-                            <span class="material-symbols-rounded">remove</span>
-                            <span class="btns_quantify-number">1</span>
-                            <span class="material-symbols-rounded">add</span>
+                            <span class="material-symbols-rounded less" id="less">remove</span>
+                            <span class="btns_quantify-number quantify" id="value">${valueCar}</span>
+                            <span class="material-symbols-rounded more" id="more">add</span>
                         </article>
                         <article class="btns_car">
                             <a href="#" class="title">Agregar al carrito</a>
                         </article>
                     </article>
                 </section>
-
-
-
                 `;
         console.log(productElement);
         container.appendChild(productElement);
@@ -88,15 +99,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 })
 
-// Función para generar las estrellas en función del rating
-function getStarsHTML(rating) {
-    let starsHTML = "";
-    for (let i = 1; i <= 5; i++) {
-        if (i <= Math.floor(rating)) {
-            starsHTML += `<span class="material-symbols-rounded star">star</span>`; // Estrella llena
-        } else {
-            starsHTML += `<span class="material-symbols-rounded star">star_border</span>`; // Estrella vacía
-        }
-    }
-    return starsHTML;
-}
+

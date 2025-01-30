@@ -8,6 +8,7 @@ const currentPage = 1; // Página actual (cambiar dinámicamente)
 const startIndex = (currentPage - 1) * productsPerPage; // Índice inicial
 const endIndex = startIndex + productsPerPage; // Índice final
 
+
 document.addEventListener('DOMContentLoaded', async (e) => {
     try{
         const products = await fetchAllProducts();
@@ -104,3 +105,4 @@ document.addEventListener('DOMContentLoaded', async (e) => {
         console.error("Hay un error de cargar cargando los productos de Shop" + error)
     }
 })
+
