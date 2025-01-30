@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', async (e) => {
         productsToShow.forEach(product => {
             const productLink = document.createElement('a');
             productLink.classList.add('product');
-            productLink.href = "./ProductDetailPage.html";
+            productLink.setAttribute('data-id', product.id);
+            // productLink.href = "./ProductDetailPage.html";
+            productLink.href = `./ProductDetailPage.html?${product.id}`;
 
             // Crear el contenedor de la imagen
             const productImgDiv = document.createElement('div');

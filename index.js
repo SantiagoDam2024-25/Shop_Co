@@ -13,9 +13,8 @@ productsContainer.forEach(productConteiner => {
                 const productLink = document.createElement('a');
                 productLink.classList.add('product');
                 productLink.setAttribute('data-id', product.id);
-                // productLink.href = `./ProductDetailPage?${product.id}`;
+
                 productLink.href = `Public/Pages/ProductDetailPage.html?${product.id}`;
-                // window.location.href= `Public/Pages/ProductDetailPage/${product.id}`;
                 // Crear el contenedor de la imagen
                 const productImgDiv = document.createElement('div');
                 productImgDiv.classList.add('product_img');
