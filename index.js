@@ -1,5 +1,9 @@
+
+
 console.log('Happy developing from Home✨')
 import { fetchHome } from "./Public/Js/Services/Api.js";
+import "./Public/Js/Components/SingUp.js"
+import "./Public/Js/Components/SingUp-PopUP.js"
 
 const productsContainer = document.querySelectorAll('.products_line');
 const loaderHome = document.querySelectorAll('.loader_home');
@@ -97,16 +101,5 @@ productsContainer.forEach(productConteiner => {
         } catch (err) {
             console.error('Error Cargando los productos', err);
         }
-        console.log('Api Home')
     })
 })
-
-
-// document.querySelectorAll('.product').forEach(product => {
-//     product.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         console.log('clicked');
-//         const productId = product.getAttribute('data-id');
-//         window.location.href = `ProductDetails.html?id=${productId}`;
-//     });
-// });

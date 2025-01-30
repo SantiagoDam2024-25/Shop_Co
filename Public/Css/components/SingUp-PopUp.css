@@ -1,0 +1,60 @@
+.singUp-PopUp{
+    position: relative;
+    z-index: 10000000;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--f-color-light);
+
+    .popup-content{
+        position: absolute;
+        z-index: 100000000000000;
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+        background-color: var(--f-color-dark);
+        border-radius: 0.5rem;
+        padding: 1rem 6rem;
+
+        .close{
+            color: var(--f-color-light);
+            float: right;
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+
+        .title{
+            font-size: 1.3rem;
+            color: var(--f-color-light);
+            text-align: center;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        padding: 10px 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}

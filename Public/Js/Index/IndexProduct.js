@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log(container)
         const productElement = document.createElement("section");
         productElement.classList.add("product_detail");
+
         productElement.innerHTML = `
           <section class="product_detail_photo">
                 <div class="photo-principal">
