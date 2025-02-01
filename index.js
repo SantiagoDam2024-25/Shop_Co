@@ -3,7 +3,9 @@
 console.log('Happy developing from Home✨')
 import { fetchHome } from "./Public/Js/Services/Api.js";
 import "./Public/Js/Components/SingUp.js"
-import "./Public/Js/Components/SingUp-PopUP.js"
+// import "./Public/Js/Components/SingUp-PopUP.js"
+import "./Public/Js/Components/MenuBurge.js"
+
 
 const productsContainer = document.querySelectorAll('.products_line');
 const loaderHome = document.querySelectorAll('.loader_home');

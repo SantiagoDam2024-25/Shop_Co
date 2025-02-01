@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../Css/Index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body class="bodySingUp">
+<header class="header">
+  <aside class="header_offer">
+    <article class="header_offer_text">
+      <h5>Registrate y obtén 20% de descuento en tu primera compra.</h5>
+      <span class="singup">Regisrate acá</span>
+      <span class="material-symbols-rounded close">close</span>
+    </article>
+  </aside>
+  <section class="header_primary">
+    <section class="header_burger">
+      <span class="line_burger"></span>
+      <ul class="header_burger_ul">
+        <li class="item">Tienda</li>
+        <li class="item">Ofertas</li>
+        <li class="item">Nuevos</li>
+        <li class="item">Marcas</li>
+      </ul>
+    </section>
+    <section class="header_img">
+      <a href="../../Index.html"><img src="../Images/Logo.png" alt="Imagen con enlace al shop.co">
+      </a>
+    </section>
+    <section class="header_nav">
+      <nav class="nav">
+        <ul class="nav_ul">
+          <li class="nav_ul-li"><a href="#">Tienda </a><span class="material-symbols-rounded icon-light">
+keyboard_arrow_down</span>
+          </li>
+          <li class="nav_ul-li">Ofertas</li>
+          <li class="nav_ul-li">Llegadas</li>
+          <li class="nav_ul-li">Marcas</li>
+        </ul>
+      </nav>
+    </section>
+    <section class="header_search">
+      <span class="material-symbols-rounded icon-light search-mobile">search</span>
+      <a href="#" class="search"><span class="material-symbols-rounded icon-light">search</span> Search for
+        products...</a>
+    </section>
+    <section class="header_icon">
+      <a href="#" class="header_icon-car">
+        <span class="material-symbols-rounded icon-light">shopping_cart</span>
+      </a>
+      <a href="#" class="header_icon-profile"><span
+              class="material-symbols-rounded icon-light">account_circle</span>
+      </a>
+
+    </section>
+  </section>
+</header>
+
+  <table class="container" id="container">
+    <tr>
+      <td class="form-container sign-up-container">
+        <form class="form" action="#">
+          <h1 class="title">Crear Cuenta</h1>
+          <div class="social-container">
+            <a  class="redes" href="#" class="social"><i class="bi bi-facebook"></i></a>
+            <a  class="redes" href="#" class="social"><i class="bi bi-google"></i></a>
+            <a  class="redes" href="#" class="social"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <span class="span">o usa tu email para registrarte</span>
+          <input class="input_user" name="name" type="text" placeholder="Nombre" required />
+          <input class="input_user" name="email" type="email" placeholder="Email" required/>
+          <input class="input_user" name="contraseña" type="password" placeholder="Contraseña" required/>
+          <div class="cntr">
+            <input checked="" type="checkbox" id="cbx" class="hidden-xs-up">
+            <label for="cbx" class="cbx"></label>
+            <label for="cbx">Términos y Condiciones</label>
+          </div>
+            <input type="submit" class="btn-action btn-form" value="registrarse" id="terminos" required>
+        </form>
+      </td>
+      <td class="form-container sign-in-container">
+        <form class="form" action="#" id="form">
+          <h1 class="title">Iniciar Sesión</h1>
+          <div class="social-container">
+            <a  class="redes" href="#" class="social"><i class="bi bi-facebook"></i></a>
+            <a  class="redes" href="#" class="social"><i class="bi bi-google"></i></a>
+            <a  class="redes" href="#" class="social"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <span class="span">o usa tu cuenta</span>
+          <input class="input_user" type="email" placeholder="Email" required/>
+          <input class="input_user" type="password" placeholder="Contraseña" required/>
+          <a  class="redes btn-icon"  href="#">¿Olvidaste tu contraseña?</a>
+          <button type="submit" class="btn-action btn-form">Iniciar Sesión</button>
+        </form>
+      </td>
+    </tr>
+
+
+    <tr class="overlay-container">
+      <td colspan="2" class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">¡Bienvenido de nuevo!</h1>
+          <p class="paragraph">Para seguir conectado con nosotros, inicia sesión con tu información personal</p>
+          <button type="submit" class="btn-action" class="ghost" id="signIn">Iniciar Sesión</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">¡Hola, Amigo!</h1>
+          <p class="paragraph">Ingresa tus datos personales y empieza tu viaje con nosotros</p>
+          <button type="submit" class="btn-action" class="ghost" id="signUp">Registrarse</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+<script src="../Js/Components/SingUp-PopUP.js"></script>
+</body>
+</html>

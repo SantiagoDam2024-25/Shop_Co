@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de ropa</title>
-    <link rel="stylesheet" href="./Public/Css/index.css">
+    <link rel="stylesheet" href="Public/Css/Index.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
 </head>
 <body class="body">
-
 <header class="header">
     <aside class="header_offer" id="header_offer">
         <article class="header_offer_text" id="header_offer_text">
@@ -19,9 +18,10 @@
     </aside>
     <section class="header_primary">
 
-        <section class="header_burger">
+        <section class="header_burger" id="burger">
             <span class="line_burger"></span>
-            <ul class="header_burger_ul">
+            <ul class="header_burger_ul" id="burger_container">
+                <span class="material-symbols-rounded close" id="closeSingUp">close</span>
                 <li class="item">Tienda</li>
                 <li class="item">Ofertas</li>
                 <li class="item">Nuevos</li>
@@ -52,15 +52,42 @@ keyboard_arrow_down</span>
             <a href="#" class="header_icon-car">
                 <span class="material-symbols-rounded icon-light">shopping_cart</span>
             </a>
-            <a href="#" class="header_icon-profile"><span
+            <a href="./Public/Pages/SingUp.html" class="header_icon-profile"><span
                     class="material-symbols-rounded icon-light" id="SingUp-PopUp-Btn">account_circle</span>
             </a>
 
         </section>
     </section>
 </header>
-<aside class="singUp-PopUp" id="singUp-PopUp"></aside>
+
 <main class="main">
+<!--    <aside class="singUp-PopUp" id="singUp-PopUp">-->
+<!--        <span class="material-symbols-rounded close" id="closeSingUp_popUp">close</span>-->
+<!--        <form class="singUp-Form" id="signupForm">-->
+<!--            <table>-->
+<!--                <tr>-->
+<!--                    <td><input type="text" id="nombre" name="nombre" placeholder="Nombre" required /></td>-->
+<!--                </tr>-->
+
+<!--                <tr>-->
+<!--                    <td><input type="text" id="apellido" name="apellido" placeholder="Apellido"  value="Apellido" required /></td>-->
+<!--                </tr>-->
+
+<!--                <tr>-->
+<!--                    <td><input type="email" id="correo" name="correo" placeholder="Correo electrónico" value="jsus@hodmsd.com" required /></td>-->
+<!--                </tr>-->
+
+<!--                <tr>-->
+<!--                    <td><input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" value="daasd54" required/></td>-->
+<!--                </tr>-->
+
+<!--                &lt;!&ndash;                <tr>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <td><input type="submit" value="Enviar"></td>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </tr>&ndash;&gt;-->
+<!--            </table>-->
+<!--            <input type="submit" value="Enviar"/>-->
+<!--        </form> &ndash;&gt;-->
+<!--    </aside>-->
     <section class="section_principal">
         <article class="section_principal_text">
             <h2 class="section_principal_text-title">ENCUENTRA ROPA QUE ENCAJE CON TU ESTILO</h2>

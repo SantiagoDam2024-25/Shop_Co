@@ -2,8 +2,8 @@
     --f-color-primary: #8C3A87;
     --f-color-secondary: #BF54B8;
     --f-color-third: #F26DE9;
-    --f-color-light: #b6abab;
-    --f-color-dark: #0d0d0d;
+    --f-color-light: rgba(182, 171, 171, 0.3);
+    --f-color-dark: rgb(13, 13, 13);
     --f-color-price-old: #969494;
     --f-color-background : #F2F0F1;
     --f-family-Satoshi: 'Satoshi', sans-serif;

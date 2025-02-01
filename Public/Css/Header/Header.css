@@ -163,7 +163,24 @@
 
         .header_burger_ul{
             display: none;
+            flex-direction: column;
+            align-items: start;
+            gap: 1rem;
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            list-style: none;
+            padding: 1rem;
+            width: 80px;
+            background-color: var(--f-color-light);
+
+            .close{
+                align-self: end;
+            }
         }
+
+
+
     }
 }
 

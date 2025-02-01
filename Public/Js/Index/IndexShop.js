@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', async (e) => {
             loaderShop.forEach(loader => loader.classList.remove('loader'))
 
             shopProducts[0].appendChild(productLink);
-            console.log(product);
         })
     }catch(error){
         console.error("Hay un error de cargar cargando los productos de Shop" + error)
