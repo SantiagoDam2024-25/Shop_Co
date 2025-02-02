@@ -1,3 +1,9 @@
+//
+import "../Components/MenuBurge.js";
+import "../Components/Switch.js"
+
+
+
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
@@ -24,11 +30,11 @@ signInButton.addEventListener('click', (e) => {
  *  Escucha el evento para arreglar la clase 'right-panel-active' que cambia de posición la tarjeta.
  *  @param [e] - evento
  */
-console.log(window.location)
+console.log(container)
 forms.forEach(form => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        window.location.pathname = '/ProyectoFinal/Public/Pages/Shop.html';
+        window.location.pathname = '../../Pages/Shop.html';
         console.log('Hola desde el Form')
     })
 })
