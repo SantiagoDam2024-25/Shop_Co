@@ -1,14 +1,32 @@
+// @function { fetchProducts } - Encargada de realizar la llamada a la API
 import { fetchAllProducts } from "../services/Api.js"
+// Habilita la funcionalidad del modal en la página de Shop
 import "../Components/BtnsOpenClose.js";
+// Habilita la funcionalidad del SingUp en la página de Shop
+import "../Components/SingUp.js"
+// Habilita la funcionalidad del MenuBurge cuando la página necesite ser responsive
+import "../Components/MenuBurge.js"
+// Habilita la funcion del Switch tema
+import "../Components/Switch.js";
+
+/*
+    IndexShop -
+        Archivo raiz del archivo: Public/Pages/Shop.html
+
+        - Encargado de la logica para renderizar la data de la API
+ */
+
 
 const shopProducts = document.getElementsByClassName('shop_products')
 const loaderShop = document.querySelectorAll(".loader")
-const productsPerPage = 10; // Cantidad de productos por página
-const currentPage = 1; // Página actual (cambiar dinámicamente)
-const startIndex = (currentPage - 1) * productsPerPage; // Índice inicial
-const endIndex = startIndex + productsPerPage; // Índice final
+const productsPerPage = 10;
+const currentPage = 1;
+const startIndex = (currentPage - 1) * productsPerPage;
+const endIndex = startIndex + productsPerPage;
 
 
+// Realiza el pedido a la API y divide el Array de Json de 10 en 10, para solamente mostrar 10 products
+// TODO - botones de paginación
 document.addEventListener('DOMContentLoaded', async (e) => {
     try{
         const products = await fetchAllProducts();
@@ -96,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async (e) => {
             productLink.appendChild(productImgDiv);
             productLink.appendChild(productTxtDiv);
 
-            loaderShop.forEach(loader => loader.classList.remove('loader'))
+            loaderShop.forEach(loader => loader.style.display = 'none');
 
             shopProducts[0].appendChild(productLink);
         })

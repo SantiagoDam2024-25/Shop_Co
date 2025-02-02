@@ -1,5 +1,8 @@
+/*------------------CSS---------------------*\
+    Estilos para la página de SingUp
+\*-------------------------------------------*/
+
 .bodySingUp {
-    background: var(--f-color-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -228,7 +231,6 @@
     margin: 1rem 0;
 }
 
-
 .cbx {
     position: relative;
     top: 1px;
@@ -278,6 +280,7 @@
     position: relative;
 }
 
+
 @keyframes jelly {
     from {
         transform: scale(1, 1);
@@ -310,4 +313,34 @@
 
 .hidden-xs-up {
     display: none!important;
+}
+
+/*--------------Modo Dark---------------*\*/
+
+.dark,
+.bodySingUp {
+    background-color: var(--f-color-background-dark) !important;
+
+    .container {
+        background-color: var(--f-color-background-darkest);
+    }
+
+    .form {
+        background-color: #333;
+    }
+
+    .overlay-container{
+        background: #8f8f8f;
+    }
+
+    .overlay{
+        background: rgb(102,102,103);
+        background: -webkit-linear-gradient(to right,#121212, #666667);
+        background: linear-gradient(to right, #121212, #666667);
+    }
+
+    .redes{
+        color: var(--f-color-text-light);
+    }
+
 }

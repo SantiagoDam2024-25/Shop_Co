@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Estilos del Banner de la página Home
+\*-------------------------------------------*/
+
 .section_principal {
     min-width: 390px;
     max-width: 100%;
@@ -17,11 +21,12 @@
 
         .section_principal_text-title {
             font-family: var(--f-family-Integral);
-            font-weight: bolder;
-            font-size: clamp(1rem,3vw + 1rem, 8em);
-            line-height: calc(.75rem * (5.25rem));
+            font-weight: lighter;
+            font-size: clamp(1rem,3vw + .8rem, 4rem);
+            line-height: 3rem;
             text-wrap: balance;
             margin: 0;
+            color: var(--f-color-text-dark);
         }
 
         .section_principal_text-subtitle {
@@ -30,6 +35,8 @@
             font-size: clamp(14px, 3vw + 1rem, 1.5em);
             margin: 0;
             width: 100%;
+            color: var(--f-color-text-dark);
+
         }
 
         .section_principal_text-button {
@@ -42,12 +49,15 @@
             border: none;
             cursor: pointer;
             text-decoration: none;
+            text-align: center;
         }
     }
 
     .section_principal_text-data {
         display: flex;
         gap: 2rem;
+        color: var(--f-color-text-dark);
+
 
         .section_text_data-metricas {
             font-weight: lighter;
@@ -75,8 +85,14 @@
         background-position: right;
         background-repeat: no-repeat;
         /*padding-right: 20vw;*/
+
+        .img_print{
+            display: none;
+        }
     }
 }
+
+/*--------------Media Query---------------*\*/
 
 @media (width < 992px) {
     .section_principal {
@@ -148,3 +164,79 @@
         }
     }
 }
+
+/*--------------Modo Print---------------*\*/
+
+@media print {
+    .section_principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        height: 18cm;
+        width: 100%;
+        page-break-after: always; /* Evita el salto de página después de esta sección */
+        /*border: 1px solid black;*/
+    }
+
+
+        .section_principal .section_principal_text {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            top: 0;
+            left: 0;
+            text-align: center;
+            order: 1; /* Asegurar que el texto vaya primero */
+
+        }
+            .section_principal_text-title {
+                font-size: 20px; /* Reducir tamaño del título para impresión */
+                line-height: 1.2rem;
+                margin: 0;
+                padding: 0;
+                height: 200px;
+            }
+
+            .section_principal_text-subtitle {
+                font-size: 14px; /* Ajustar el tamaño del subtítulo */
+                margin: -30px 0 0;
+            }
+
+    .section_principal{
+        .section_principal_text{
+            .section_principal_text-button{
+                line-height: 2rem;
+                margin: -10px 0 0;
+                color: black;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .section_principal{
+        .section_principal_img {
+            height: 350px;
+            background-image: none;
+            order: 2;
+
+            .img_print{
+                display: block;
+                width: 100%;
+                height: 100%;
+                filter: grayscale(100%);
+            }
+        }
+    }
+
+
+    .section_principal{
+        .section_principal_text-data {
+            display: none;
+        }
+    }
+}
+

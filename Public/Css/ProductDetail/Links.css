@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Estilos de la linea donde se mostrara en que link te encuentras de la app
+\*-------------------------------------------*/
+
 .section_links {
     display: flex;
     align-items: center;
@@ -26,6 +30,8 @@
     }
 }
 
+/*--------------Media Query---------------*\*/
+
 @media ( width > 480px) {
     .section_links {
         .links{
@@ -38,6 +44,17 @@
     .section_links {
         .links{
             width: var(--f-width-lg);
+        }
+    }
+}
+
+/*--------------Media Query---------------*\*/
+
+.dark{
+    .section_links{
+        .link{
+            color: var(--f-color-text-light);
+
         }
     }
 }

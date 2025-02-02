@@ -1,4 +1,7 @@
-// Evento del icon X que cierra el modal de Sing Up and get a desc.
+/*
+    SingUp -
+        Responsable de cerrar el modal de oferta de descuento por ingresar.
+ */
 
 document.getElementById("closeSingUp").addEventListener("click", (e) => {
     e.preventDefault();

@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Estilos de los detalles del producto por individual.
+\*-------------------------------------------*/
+
 .product_detail {
     max-width: 100vw;
     display: flex;
@@ -54,7 +58,7 @@
         .title {
             font-family: var(--f-family-Integral);
             font-weight: bolder;
-            color: var(--f-color-dark);
+            color: var(--f-color-text-dark);
             text-wrap: balance;
             margin: 0;
         }
@@ -142,8 +146,8 @@
             .article_size-txt{
                 padding: .5rem 1rem;
                 border-radius: 1rem;
-                background-color: var(--f-color-light);
-                color: var(--f-color-dark);
+                background-color: var(--f-color-text-light);
+                color: var(--f-color-text-dark);
                 cursor: pointer;
             }
         }
@@ -162,7 +166,7 @@
             display: flex;
             align-items: center;
             gap: 1rem;
-            background-color: var(--f-color-light);
+            background-color: var(--f-color-text-light);
             padding: 1rem 1rem;
             border-radius: 2rem;
             cursor: pointer;
@@ -170,8 +174,8 @@
 
         .title{
             padding: 1rem 3rem;
-            background-color: var(--f-color-dark);
-            color: var(--f-color-light);
+            background-color: var(--f-color-text-dark);
+            color: var(--f-color-text-light);
             border-radius: 2rem;
             text-decoration: none;
             cursor: pointer;
@@ -179,9 +183,11 @@
     }
 }
 
-.topVenta{
+.topVenta {
     margin-bottom: 2rem;
 }
+
+/*--------------Media Query---------------*\*/
 
 @media (width > 480px){
     .product_detail{
@@ -241,4 +247,31 @@
             }
         }
     }
+}
+
+/*--------------Media Query---------------*\*/
+
+.dark{
+    .product_detail{
+
+        .product_detail_photo {
+            color: var(--f-color-text-light);
+
+        }
+
+        .title{
+            color: var(--f-color-text-light);
+        }
+
+        .description{
+            color: var(--f-color-text-light);
+        }
+
+        .btns_quantity{
+            background-color: var(--f-color-background-darkest);
+            color: var(--f-color-text-light);
+        }
+    }
+
+
 }

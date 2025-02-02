@@ -3,26 +3,32 @@
 \*------------------------------------------------*/
 
 @import "Normalize.css";
-@import "./rules.css";
+@import "Rules.css";
 @import "./Font_Satoshi/Satochi.css";
 @import "./Font_Integral/Integral.css";
+
 @import "Header/Header.css";
-@import "components/BannerSingUp.css";
-@import "components/Components.css";
 @import "Main/Banner.css";
 @import "Main/Brands.css";
 @import "Main/Review.css";
 @import "Main/Categories.css";
-@import "components/ButtonHome.css";
-@import "components/Home-Section-Products.css";
-@import "components/Home-Card-Product.css";
-@import "components/Loader.css";
-@import "components/SingUp-PopUp.css";
+
+@import "Components/BannerSingUp.css";
+@import "Components/Components.css";
+@import "Components/ButtonHome.css";
+@import "Components/Home-Section-Products.css";
+@import "Components/Home-Card-Product.css";
+@import "Components/Loader.css";
+@import "Components/SingUp-PopUp.css";
+@import "Components/Switch.css";
 
 @import "ProductDetail/Links.css";
 @import "ProductDetail/ProductDetail-Card-Product.css";
 @import "ProductDetail/Rare.css";
+
 @import "Shop/Shop.css";
 @import "Shop/filters-settings.css";
 
 @import "Footer/Footer.css";
+
+

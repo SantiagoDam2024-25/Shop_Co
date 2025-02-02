@@ -1,20 +1,40 @@
+/*------------------CSS---------------------*\
+    Custom properties
+\*-------------------------------------------*/
+
 :root{
     --f-color-primary: #8C3A87;
     --f-color-secondary: #BF54B8;
     --f-color-third: #F26DE9;
-    --f-color-light: rgba(182, 171, 171, 0.3);
-    --f-color-dark: rgb(13, 13, 13);
+
+    --f-color-text-light: #F2F2F2;
+    --f-color-text-dark: #141414;
+
     --f-color-price-old: #969494;
-    --f-color-background : #F2F0F1;
+
+    --f-color-background-light : #F2F0F1;
+    --f-color-background-dark : #1F1F1F;
+    --f-color-background-darkest: #0a0a0a;
+
     --f-family-Satoshi: 'Satoshi', sans-serif;
     --f-family-Integral: 'integral_cfheavy', sans-serif;
     --f-width-lg: calc(100vw - 10.5rem);
     --f-width-md: calc(100vw - 6rem);
     --f-width-xs: calc(100vw - 2rem);
-
 }
+
+/*----------Tipografía del proyecto--------*\*/
+
 
 *{
     font-family: var(--f-family-Satoshi);
 }
 
+/*------------------CSS---------------------*\
+    Declaración raiz del cambio de tema
+\*-------------------------------------------*/
+
+.dark{
+    background-color: var(--f-color-background-dark);
+    color: var(--f-color-text-light);
+}

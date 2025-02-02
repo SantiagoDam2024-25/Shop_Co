@@ -1,28 +1,44 @@
+// @function { fetchProducts } - Encargada de realizar la llamada a la API
 import { fetchProducts } from "../services/Api.js";
-const params = new URLSearchParams(window.location.search.substring(1));
+// Habilita la funcionalidad del modal en la página de detalle de producto
+import "../Components/BtnsOpenClose.js";
+// Habilita la funcionalidad de SingUp en la página de detalle de producto
+import "../Components/SingUp.js"
+// Habilita la funcionalidad del modal de MenuBurger en la página de detalle de producto
+import "../Components/MenuBurge.js"
+// Habilita el Switch para cambiar de tema
+import "../Components/Switch.js"
+
+/*
+    IndexProduct -
+        Archivo raiz del archivo: Public/Pages/ProductDetailPage.html
+
+        - Encargado de la logica para renderizar la data de la API
+        - Encargado de manejar los click del agregar producto
+ */
+
+// valueCar - Contador de las unidades a agregar al carrito
 let valueCar = 0;
+
+// Evento que escucha el click donde aumenta o reduce la cantidad
 document.addEventListener("click", (event) => {
     let valueCar = document.getElementById("value");
 
-    console.log(valueCar.innerText)
     if (event.target.classList.contains("more")) {
         valueCar.innerText++;
 
         console.log("Sumar producto al carrito", valueCar);
     } else if (event.target.classList.contains("less") && (valueCar.innerText > 1)) {
         --valueCar.innerText;
-        console.log("Restar producto del carrito", valueCar);
     }
 });
 
-console.log('Hola desde ProductDetails');
-
+// Evento que hace la consulta a la API y renderiza la data.
 document.addEventListener("DOMContentLoaded", async () => {
     const product = await fetchProducts(window.location.search.substring(1));
 
     try{
         const container = document.querySelector(".product_detail");
-        console.log(container)
         const productElement = document.createElement("section");
         productElement.classList.add("product_detail");
 
@@ -92,11 +108,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                     </article>
                 </section>
                 `;
-        console.log(productElement);
         container.appendChild(productElement);
 
     } catch (error) {
-        console.log(error);
+        console.error(error);
     }
 })
 

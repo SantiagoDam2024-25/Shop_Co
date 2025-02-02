@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Estilos de los Footer de toda la app
+\*-------------------------------------------*/
+
 .footer{
     width: 100vw;
     background-color: #f0f0f0;
@@ -35,7 +39,7 @@
 
             .title{
                 font-size: 2.5rem;
-                color: var(--f-color-light);
+                color: var(--f-color-text-light);
                 font-weight: 700;
                 font-family: var(--f-family-Integral);
             }
@@ -108,7 +112,7 @@
             .item{
                 list-style: none;
                 margin-bottom: 0.75rem;
-                color: var(--f-color-dark);
+                color: var(--f-color-text-dark);
                 font-weight: lighter;
             }
         }
@@ -138,6 +142,8 @@
 
 
 }
+
+/*--------------Media Query---------------*\*/
 
 @media (width < 992px){
     .footer{
@@ -213,4 +219,24 @@
         }
 
     }
+}
+
+/*--------------Media Query---------------*\*/
+
+.dark{
+    .footer{
+        background-color: var(--f-color-background-darkest);
+
+        img{
+            filter: invert(1);
+        }
+
+        .footer_info-links-list{
+
+            .item{
+                color: var(--f-color-text-light);
+            }
+        }
+    }
+
 }

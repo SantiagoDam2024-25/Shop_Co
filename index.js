@@ -1,14 +1,20 @@
-
-
-console.log('Happy developing from Home✨')
+// @function { fetchHome } - Encargada de realizar la llamada a la API
 import { fetchHome } from "./Public/Js/Services/Api.js";
+// Habilita la funcionalidad de SingUp en la página de Home
 import "./Public/Js/Components/SingUp.js"
-// import "./Public/Js/Components/SingUp-PopUP.js"
+// Habilita la funcionalidad del modal de MenuBurger en la página de Home
 import "./Public/Js/Components/MenuBurge.js"
+// Habilita la funcion del Switch tema
+import "./Public/Js/Components/Switch.js";
 
 
 const productsContainer = document.querySelectorAll('.products_line');
 const loaderHome = document.querySelectorAll('.loader_home');
+
+/**
+ *  funtion [productosContainer] - Renderizar productos
+ *  Ercargado de realizar la consulta a la API para mostrar los productos en la página
+ */
 
 productsContainer.forEach(productConteiner => {
     document.addEventListener("DOMContentLoaded", async () => {

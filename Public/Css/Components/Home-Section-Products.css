@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Estilos de la seción donde se mostraran la lista de productos en la página de home
+\*-------------------------------------------*/
+
 .home_section {
     min-width: 390px;
     width: 100vw;
@@ -39,11 +43,13 @@
             padding: 1rem 6rem;
             border-radius: 4rem;
             border: 2px solid var(--f-color-price-old);
-            color: var(--f-color-dark);
+            color: var(--f-color-text-dark);
             cursor: pointer;
         }
     }
 }
+
+/*--------------Media Query---------------*\*/
 
 @media (width < 992px){
     .home_section{
@@ -53,11 +59,42 @@
     }
 }
 
-
 @media (width < 480px){
     .home_section{
         .home_section_container{
             width: var(--f-width-xs);
+        }
+    }
+}
+
+/*--------------Media Print---------------*\*/
+@media print{
+    .home_section{
+    /*border: 1px solid red;*/
+
+        .home_section_container {
+            padding: 0;
+            margin: 0;
+
+            .home_section_container-txt {
+                margin: 0;
+                /*line-height: 0;*/
+
+                .home_section_container-txt-title {
+                    font-size: 2rem;
+                    margin: 0;
+                    /*line-height: 0;*/
+                }
+            }
+        }
+    }
+}
+
+/*--------------Modo Dark-----------------*\*/
+.dark{
+    .home_section{
+        .button{
+            color: var(--f-color-text-light);
         }
     }
 }

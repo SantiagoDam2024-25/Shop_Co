@@ -1,3 +1,7 @@
+/*------------------CSS----------------------*\
+    RARE - Reviews en la página del producto individual
+\*-------------------------------------------*/
+
 .product_rare {
     display: flex;
     flex-direction: column;
@@ -38,8 +42,8 @@
             /*font-size: 1.2rem;*/
         .action{
             padding: 1rem .8rem;
-            background-color: var(--f-color-dark);
-            color: var(--f-color-light);
+            background-color: var(--f-color-text-dark);
+            color: var(--f-color-text-light);
             border-radius: 2rem;
         }
     }
@@ -99,6 +103,9 @@
         }
     }
 }
+
+/*--------------Media Query---------------*\*/
+
 
 @media (width > 480px) {
     .product_rare{

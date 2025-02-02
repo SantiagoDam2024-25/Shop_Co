@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    Titulo de la pagina-->
     <title>Tienda de ropa</title>
+<!--    Estilos del proyecto-->
     <link rel="stylesheet" href="Public/Css/Index.css">
+<!--    Api de iconos-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+<!--    Meta Etiquetas para la Web-->
+    <meta name="description" content="Esta es una página que pretende vender ropa en la web">
+    <meta name="keywords" content="ropa, vestimenta, formal, ect...">
+    <meta name="author" content="Shop">
+<!--    Meta Etiquetas para la card de Open Graph-->
+    <meta property="og:title" content="Shop">
+    <meta property="og:description" content="Esta es una página que pretende vender ropa en la web">
+    <meta property="og:image" content="localhost">
+    <meta property="og:url" content="localhost">
+    <meta property="og:type" content="website">
+<!--        MetaEtiqueta de icono-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
-<body class="body">
+
+<body class="body dark">
+<!--Header el documentos-->
 <header class="header">
+
     <aside class="header_offer" id="header_offer">
         <article class="header_offer_text" id="header_offer_text">
             <h5>Registrate y obtén 20% de descuento en tu primera compra.</h5>
@@ -26,10 +45,40 @@
                 <li class="item">Ofertas</li>
                 <li class="item">Nuevos</li>
                 <li class="item">Marcas</li>
+                <li class="switch-Btn">
+                    <div>
+                        <input id="checkbox-input" type="checkbox" />
+                        <label class="switch" for="checkbox-input">
+                            <svg
+                                    xml:space="preserve"
+                                    style="enable-background:new 0 0 128 128"
+                                    viewBox="0 0 128 128"
+                                    height="3em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+      <path
+              d="M77.547 120.684h-5.765l-1.698 3.012a7.477 7.477 0 0 1-6.513 3.804h-.003a7.479 7.479 0 0 1-6.513-3.804l-1.698-3.012h-5.765v-4.06h27.956v4.06z"
+              style="fill:#51514c"
+      ></path>
+                                <path
+                                        d="M77.547 113.65H49.591v-4.279h27.956v4.279zm0-11.711H49.591v4.279h27.956v-4.279zm38.587-32.576-12.209-3.271.92-3.434 12.209 3.271-.92 3.434zm-104.268 0-.92-3.434 12.209-3.271.92 3.434-12.209 3.271zm92.979-24.913-.92-3.434 12.209-3.272.92 3.434-12.209 3.272zm-81.69 0-12.209-3.272.92-3.434 12.209 3.272-.92 3.434zM94.82 25.247l-2.514-2.514 8.938-8.938 2.514 2.514-8.938 8.938zm-61.64 0-8.937-8.938 2.514-2.514 8.937 8.938-2.514 2.514zm43.358-11.618-3.434-.92L76.376.5l3.434.92-3.272 12.209zm-25.076 0L48.191 1.42 51.625.5l3.272 12.209-3.435.92z"
+                                        style="fill:#a7a79b"
+                                ></path>
+                                <path
+                                        d="M59.802 64.141h7.535v34.934h-7.535V64.141zm3.767-44.754c-18.485-.53-33.631 14.817-33.631 33.824 0 9.781 4.016 18.581 10.431 24.753 5.637 5.423 9.222 13.147 9.222 21.111h7.84V64.141H51.75c-4.44 0-8.051-3.612-8.051-8.051s3.612-8.051 8.051-8.051 8.052 3.612 8.052 8.051v5.681h7.535V56.09c0-4.44 3.612-8.051 8.052-8.051 4.44 0 8.051 3.612 8.051 8.051s-3.612 8.051-8.051 8.051h-5.682v34.934h7.84c0-7.964 3.584-15.688 9.222-21.111C93.184 71.792 97.2 62.992 97.2 53.211c0-19.008-15.146-34.355-33.631-33.824zM51.75 50.408a5.687 5.687 0 0 0-5.681 5.681 5.687 5.687 0 0 0 5.681 5.681h5.682v-5.681a5.688 5.688 0 0 0-5.682-5.681zM75.389 61.77h-5.682v-5.681a5.688 5.688 0 0 1 5.682-5.681 5.687 5.687 0 0 1 5.681 5.681 5.687 5.687 0 0 1-5.681 5.681z"
+                                        style="fill:#ffffff"
+                                ></path>
+    </svg>
+                        </label>
+                    </div>
+
+                </li>
+
             </ul>
         </section>
         <section class="header_img">
-            <img src="Public/Images/Logo.png" alt="Imagen con enlace al shop.co">
+            <a href="#"><img src="./Public/Images/Logo.png" alt="Imagen con enlace al shop.co">
+            </a>
         </section>
         <section class="header_nav">
             <nav class="nav">
@@ -55,39 +104,37 @@ keyboard_arrow_down</span>
             <a href="./Public/Pages/SingUp.html" class="header_icon-profile"><span
                     class="material-symbols-rounded icon-light" id="SingUp-PopUp-Btn">account_circle</span>
             </a>
+            <div>
+                <input id="checkbox-input" type="checkbox" />
+                <label class="switch" for="checkbox-input">
+                    <svg
+                            xml:space="preserve"
+                            style="enable-background:new 0 0 128 128"
+                            viewBox="0 0 128 128"
+                            height="3em"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+      <path
+              d="M77.547 120.684h-5.765l-1.698 3.012a7.477 7.477 0 0 1-6.513 3.804h-.003a7.479 7.479 0 0 1-6.513-3.804l-1.698-3.012h-5.765v-4.06h27.956v4.06z"
+              style="fill:#51514c"
+      ></path>
+                        <path
+                                d="M77.547 113.65H49.591v-4.279h27.956v4.279zm0-11.711H49.591v4.279h27.956v-4.279zm38.587-32.576-12.209-3.271.92-3.434 12.209 3.271-.92 3.434zm-104.268 0-.92-3.434 12.209-3.271.92 3.434-12.209 3.271zm92.979-24.913-.92-3.434 12.209-3.272.92 3.434-12.209 3.272zm-81.69 0-12.209-3.272.92-3.434 12.209 3.272-.92 3.434zM94.82 25.247l-2.514-2.514 8.938-8.938 2.514 2.514-8.938 8.938zm-61.64 0-8.937-8.938 2.514-2.514 8.937 8.938-2.514 2.514zm43.358-11.618-3.434-.92L76.376.5l3.434.92-3.272 12.209zm-25.076 0L48.191 1.42 51.625.5l3.272 12.209-3.435.92z"
+                                style="fill:#a7a79b"
+                        ></path>
+                        <path
+                                d="M59.802 64.141h7.535v34.934h-7.535V64.141zm3.767-44.754c-18.485-.53-33.631 14.817-33.631 33.824 0 9.781 4.016 18.581 10.431 24.753 5.637 5.423 9.222 13.147 9.222 21.111h7.84V64.141H51.75c-4.44 0-8.051-3.612-8.051-8.051s3.612-8.051 8.051-8.051 8.052 3.612 8.052 8.051v5.681h7.535V56.09c0-4.44 3.612-8.051 8.052-8.051 4.44 0 8.051 3.612 8.051 8.051s-3.612 8.051-8.051 8.051h-5.682v34.934h7.84c0-7.964 3.584-15.688 9.222-21.111C93.184 71.792 97.2 62.992 97.2 53.211c0-19.008-15.146-34.355-33.631-33.824zM51.75 50.408a5.687 5.687 0 0 0-5.681 5.681 5.687 5.687 0 0 0 5.681 5.681h5.682v-5.681a5.688 5.688 0 0 0-5.682-5.681zM75.389 61.77h-5.682v-5.681a5.688 5.688 0 0 1 5.682-5.681 5.687 5.687 0 0 1 5.681 5.681 5.687 5.687 0 0 1-5.681 5.681z"
+                                style="fill:#ffffff"
+                        ></path>
+    </svg>
+                </label>
+            </div>
 
         </section>
     </section>
 </header>
 
 <main class="main">
-<!--    <aside class="singUp-PopUp" id="singUp-PopUp">-->
-<!--        <span class="material-symbols-rounded close" id="closeSingUp_popUp">close</span>-->
-<!--        <form class="singUp-Form" id="signupForm">-->
-<!--            <table>-->
-<!--                <tr>-->
-<!--                    <td><input type="text" id="nombre" name="nombre" placeholder="Nombre" required /></td>-->
-<!--                </tr>-->
-
-<!--                <tr>-->
-<!--                    <td><input type="text" id="apellido" name="apellido" placeholder="Apellido"  value="Apellido" required /></td>-->
-<!--                </tr>-->
-
-<!--                <tr>-->
-<!--                    <td><input type="email" id="correo" name="correo" placeholder="Correo electrónico" value="jsus@hodmsd.com" required /></td>-->
-<!--                </tr>-->
-
-<!--                <tr>-->
-<!--                    <td><input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" value="daasd54" required/></td>-->
-<!--                </tr>-->
-
-<!--                &lt;!&ndash;                <tr>&ndash;&gt;-->
-<!--                &lt;!&ndash;                    <td><input type="submit" value="Enviar"></td>&ndash;&gt;-->
-<!--                &lt;!&ndash;                </tr>&ndash;&gt;-->
-<!--            </table>-->
-<!--            <input type="submit" value="Enviar"/>-->
-<!--        </form> &ndash;&gt;-->
-<!--    </aside>-->
     <section class="section_principal">
         <article class="section_principal_text">
             <h2 class="section_principal_text-title">ENCUENTRA ROPA QUE ENCAJE CON TU ESTILO</h2>
@@ -119,8 +166,10 @@ keyboard_arrow_down</span>
 
         </article>
         <article class="section_principal_img">
+            <img class="img_print" src="Public/Images/HomeMobile.png" alt="Imagen de Shop - Pareja vistiendo de vachero">
         </article>
     </section>
+
     <section class="section_brands">
         <article class="section_brands-images">
             <img class="image" src="./Public/Images/Brands/Versage.png" alt="" srcset="">
@@ -130,6 +179,7 @@ keyboard_arrow_down</span>
             <img class="image" src="./Public/Images/Brands/CalvinKlein.png" alt="" srcset="">
         </article>
     </section>
+
     <section class="home_section">
         <div class="home_section_container">
             <div class="home_section_container-txt">
@@ -150,9 +200,11 @@ keyboard_arrow_down</span>
 
         </div>
     </section>
+
     <div class="home-line">
         <div class="home-line-color"></div>
     </div>
+
     <section class="home_section">
         <div class="home_section_container">
             <div class="home_section_container-txt">
@@ -174,39 +226,16 @@ keyboard_arrow_down</span>
         </div>
 </section>
 
-<!--    <section class="home_categories">-->
-<!--                    <div class="home_categories-content">-->
-<!--                        <h3 class="categories-title">Busca por estilos</h3>-->
-
-<!--                        <article class="categories-product">-->
-<!--                            <article class="categories_product_article small">-->
-<!--                                <img src="./Public/Images/Categories/CasualMobile.png" alt="" class="image_mobile">-->
-<!--                                <img src="./Public/Images/Categories/CasualDesktop.png" alt="" class="image_desktop">-->
-<!--                            </article>-->
-<!--                            <article class="categories_product_article large">-->
-<!--                                <img src="Public/Images/Categories/FormalMobile.png" class="image_mobile">-->
-<!--                                <img src="./Public/Images/Categories/FormalDesktop.png" alt="" class="image_desktop">-->
-<!--                            </article>-->
-<!--                            <article class="categories_product_article large">-->
-<!--                                <img src="./Public/Images/Categories/GymMobile.png" alt="" class="image_mobile">-->
-<!--                                <img src="./Public/Images/Categories/GymDesktop.png" alt="" class="image_desktop">-->
-<!--                            </article>-->
-<!--                            <article class="categories_product_article small">-->
-<!--                                <img src="./Public/Images/Categories/PartyMobile.png" alt="" class="image_mobile">-->
-<!--                                <img src="./Public/Images/Categories/PartyDesktop.png" alt="" class="image_desktop">-->
-<!--                            </article>-->
-<!--                        </article>-->
-<!--                    </div>-->
-<!--                </section>-->
     <section class="home_section">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XCSfvv7o_bk?si=RPIPD1cnaWK7WeQn"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XCSfvv7o_bk?si=RPIPD1cnaWK7WeQn"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
     </section>
+
     <section class="home_review">
-            <div class="home_review_container">
+        <div class="home_review_container">
                 <div class="home_review_txt">
                     <h5 class="home_review_txt-title">OPINIONES DE CLIENTES</h5>
                     <div class="home_review_txt_arrow">
@@ -278,7 +307,7 @@ keyboard_arrow_down</span>
                     </article>
                 </section>
             </div>
-        </section>
+    </section>
 </main>
 
 <footer class="footer">

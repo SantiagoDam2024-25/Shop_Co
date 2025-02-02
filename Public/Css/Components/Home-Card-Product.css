@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Estilos de la linea donde se mostraran las imagenes en la página Home
+\*-------------------------------------------*/
+
 .products_line{
     display: flex;
     justify-content: space-between;
@@ -22,7 +26,8 @@
 
         .product_img-img{
             width: 295px;
-            height: 100%;
+            height: 350px;
+            /*object-fit: cover;*/
         }
 
         .product_txt{
@@ -96,8 +101,50 @@
     }
 }
 
+/* Quita el diseño por default del scroll al navegador*/
+.products_line::-webkit-scrollbar {
+    display: none;
+}
+
+/*--------------Media Query---------------*\*/
+
 @media (width < 480px) {
     .products_line{
         gap: 1rem;
     }
+}
+
+@media print{
+    .products_line{
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        max-width: 100vw;
+        min-height: 100vh;
+        /*max-height: 100vh;*/
+
+        .product{
+            width: calc(50% - 10px);
+            max-height: 300px;
+        }
+
+        .product_txt{
+            padding: 0;
+            /*height: 10rem;*/
+        }
+    }
+}
+
+/*--------------Modo Dark---------------*\*/
+
+.dark{
+    .products_line{
+
+        .product{
+            color: var(--f-color-text-light);
+        }
+    }
+
 }

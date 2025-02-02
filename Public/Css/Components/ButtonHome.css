@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Botones.
+\*-------------------------------------------*/
+
 .newArrivals_button{
     background: none;
     border: 1px solid rgba(13, 13, 13, 0.31);
@@ -5,5 +9,5 @@
     width: 218px;
     height: 52px;
     border-radius: 4rem;
-    color: var(--f-color-light);
+    color: var(--f-color-text-light);
 }

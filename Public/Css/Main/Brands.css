@@ -1,3 +1,7 @@
+/*------------------CSS---------------------*\
+    Estilos de la la linea donde se verán los logos de las marcas.
+\*-------------------------------------------*/
+
 .section_brands {
     min-width: 390px;
     max-width: 100vw;
@@ -23,6 +27,8 @@
     }
 }
 
+/*--------------Media Query---------------*\*/
+
 @media (width < 480px) {
     .section_brands{
         .section_brands-images{
@@ -31,5 +37,20 @@
             gap-column: 1.5rem;
             row-gap: 1rem;
         }
+    }
+}
+
+/*--------------Modo Print---------------*\*/
+
+@media print{
+    .section_brands{
+        height: 250px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        page-break-after: avoid;
+    }
+    .section_brands-images{
+        filter: invert(1);
     }
 }

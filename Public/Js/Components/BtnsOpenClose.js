@@ -1,5 +1,7 @@
-//Codigo que abre el modal de Setting en la página de Shop.
-
+/*
+    BtnsOpenClose -
+        Codigo que abre el modal de Setting en la página de Shop.
+ */
 
 // Icon para abrir el modal.
 const settingBtn = document.getElementById("settingBtn");
@@ -24,7 +26,6 @@ if (settingBtn) {
 if (closeSetting) {
     closeSetting.addEventListener("click", (e) => {
         e.preventDefault();
-        console.log('clicked');
         settingSection.style.display = 'none';
     });
 }
